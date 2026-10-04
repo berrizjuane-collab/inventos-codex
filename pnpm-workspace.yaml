@@ -1,0 +1,8 @@
+packages:
+  - '.'
+allowBuilds:
+  esbuild: true
+
+storeDir: ../.pnpm-store
+cacheDir: ../.pnpm-cache
+stateDir: ../.pnpm-state

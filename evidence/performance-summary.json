@@ -1,0 +1,44 @@
+{
+  "source": "evidence/performance-local.json",
+  "environment": "Linux VM, Chromium151, ANGLESwiftShader software GPU; does not replace Windows i9-13900H/16GiB acceptance",
+  "validProfile": true,
+  "metrics": {
+    "frames": {
+      "medianMs": 66.59999999999854,
+      "p95Ms": 100,
+      "targetMs": 33.3,
+      "meetsTargetInThisEnvironment": false
+    },
+    "controls": {
+      "medianMs": 227.40000000596046,
+      "p95Ms": 297.70000000298023,
+      "targetMs": 100,
+      "meetsTargetInThisEnvironment": false
+    },
+    "field": {
+      "medianMs": 79.5,
+      "p95Ms": 99.80000000447035,
+      "targetMs": 500,
+      "meetsTargetInThisEnvironment": true
+    },
+    "lines": {
+      "medianMs": 78.70000000298023,
+      "p95Ms": 108.80000000447035,
+      "targetMs": 2000,
+      "meetsTargetInThisEnvironment": true
+    },
+    "cancelUpperBound": {
+      "medianMs": 1,
+      "p95Ms": 1,
+      "targetMs": 100,
+      "meetsTargetInThisEnvironment": true
+    }
+  },
+  "maximum": {
+    "changes": 50,
+    "allLinesVisible": true,
+    "allContextsAvailable": true,
+    "errors": []
+  },
+  "Q04ReferenceMachineVerified": false
+}

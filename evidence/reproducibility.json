@@ -1,0 +1,544 @@
+{
+  "buildsIdentical": true,
+  "fileCount": 107,
+  "cleanInstall": "clean-install.log",
+  "cleanBuild": "clean-build.log",
+  "cleanUnit": "clean-unit.log",
+  "entries": [
+    {
+      "path": "assets/KaTeX_AMS-Regular-BQhdFMY1.woff2",
+      "sha256": "0cdd387c9590a1a9f9794560022dbb59654a7d86f187aa0c81495ad42d3a7308",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_AMS-Regular-DMm9YOAa.woff",
+      "sha256": "30da91e84c893f875e252689faebdc590b2871145e8adc7f9a9d4dbd8ce0b251",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_AMS-Regular-DRggAlZN.ttf",
+      "sha256": "68534840bcfdd2bffb6f0e8deb48684dd01e7f04ea2813267577afb906de1d13",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Caligraphic-Bold-ATXxdsX0.ttf",
+      "sha256": "07d8e303ce4fc12b4bb54f1004170dd190a1f3db45d400fe68060df3e0897268",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Caligraphic-Bold-BEiXGLvX.woff",
+      "sha256": "1ae6bd7475590e97e7f145a89e09ccde322f7a6bc0b91607b1c8b8ee28290fed",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Caligraphic-Bold-Dq_IR9rO.woff2",
+      "sha256": "de7701e42cf1f4cf0b766c03fb27977207eee2f4fd5d76fa82188406da43ea4c",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Caligraphic-Regular-CTRA-rTL.woff",
+      "sha256": "3398dd02302557a793f2863f88e02d96ce10df2abffa07c8e9fa90775116e65c",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Caligraphic-Regular-Di6jR-x-.woff2",
+      "sha256": "5d53e70ad607c2352162dec9e0923fb54ecdafaccbf604cd8dcf7d00facb989b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Caligraphic-Regular-wX97UBjC.ttf",
+      "sha256": "ed0b74372feefcbb9c0666b2e210da37b7e49fa7fbbf3eeb11db5f693dacfbb7",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Fraktur-Bold-BdnERNNW.ttf",
+      "sha256": "9163df9c7122432e6495b4229fa9071cf9ae86a758ae5efc4924ec2e1a6dbce1",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Fraktur-Bold-BsDP51OF.woff",
+      "sha256": "9be7ceb88004ab8ad124082246fbfcca4091e36385d4ec6ed1df67375dad50fb",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Fraktur-Bold-CL6g_b3V.woff2",
+      "sha256": "74444efd593c005e3f4573b44524704c0af0a937fe911cca9e94068d0d140d3f",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Fraktur-Regular-CB_wures.ttf",
+      "sha256": "1e6f9579e90e2cac37f8f60a597c436e075c114385652b7cbeb0dec0421291b3",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Fraktur-Regular-CTYiF6lA.woff2",
+      "sha256": "51814d270d06ff0255dba0799994fa4d8c84d11f09951d47595f4abb1f3602dc",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Fraktur-Regular-Dxdc4cR9.woff",
+      "sha256": "5e28753be717dac97f559f49bc10be9cf3c124ddcabda6659d11cb68febc6463",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Bold-Cx986IdX.woff2",
+      "sha256": "0f60d1b897938ec918c8ce073092411baf9438f6739465693ff18b0f9d20b021",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Bold-Jm3AIy58.woff",
+      "sha256": "c76c5d696297d51b9cb1639c7da4334f0e7dec81b42b11213b5e25ef671bb822",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Bold-waoOVXN0.ttf",
+      "sha256": "138ac28d1663b3037e9c5f52371fa5c63d8324f4a38d22cd573e6ea3a3fd0cf8",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-BoldItalic-DxDJ3AOS.woff2",
+      "sha256": "99cd42a3c072d918f2f44984a807cf7aa16e13545fd0875fc07c6c65f99e715b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-BoldItalic-DzxPMmG6.ttf",
+      "sha256": "70ee1f64a20f2048c21940ef46d0144fd215baa953ca69afd1e31e98544f708f",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-BoldItalic-SpSLRI95.woff",
+      "sha256": "a6f7ec0d846ac7ad975adb8959c37ed49b94acbc4ae436db9ce9e20287e4a64c",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Italic-3WenGoN9.ttf",
+      "sha256": "0d85ae7cc30f23790a7f1a58c4a112fdca8aae769b6ba11429af1d98b1b6cb3a",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Italic-BMLOBm91.woff",
+      "sha256": "f1d6ef86f3b11a528bd5185199bd2443ecb2b0dead96d88674b5a2c12be24bdf",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Italic-NWA7e6Wa.woff2",
+      "sha256": "97479ca6cce906abc961ecac96faa5f9ca2e61b8e7670d475826bcdee9a7c267",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Regular-B22Nviop.woff2",
+      "sha256": "c2342cd8b869e01752a9321dc17213fc40d4d04c79688c1d43f2cf316abd7866",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Regular-Dr94JaBh.woff",
+      "sha256": "c6368d87e8a1a3a5d337623d83d8dc4b868f242a9ad476237d6f8d1e0f168cdc",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Main-Regular-ypZvNtVU.ttf",
+      "sha256": "d0332f52868370fd83ae7fa46470f90c8f2eab2fcf12bc4f88080b340c95a830",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Math-BoldItalic-B3XSjfu4.ttf",
+      "sha256": "f9377ab0271cda59af24bcffbd46a4d0c8a3572ffafdbb38de2ad5ea7b0d5ee5",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Math-BoldItalic-CZnvNsCZ.woff2",
+      "sha256": "dc47344dbb6cb5b655c8460d561f4df5f501b90c804ad3c6cec65fe322351ab1",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Math-BoldItalic-iY-2wyZ7.woff",
+      "sha256": "850c0af5c2238497febaf5e461d880bf458c341f42f4f330f1b1ab5698b1998e",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Math-Italic-DA0__PXp.woff",
+      "sha256": "8a8d244581371912b8f3f5a23e2437cb2a59cd9bcaebb0346e722c05737a2571",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Math-Italic-flOr_0UB.ttf",
+      "sha256": "08ce98e51b04d58945a301e639e02b6998af29fdfd61a7b8afdd07bbfc479d4a",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Math-Italic-t53AETM-.woff2",
+      "sha256": "7af58c5ec8f132a2ddde9027c6d7814decce4d3b822a11192a42a20e2e973264",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Bold-CFMepnvq.ttf",
+      "sha256": "1ece03f79f95277d57dc7f6b435a74e1379b0d46104a8530286b60ff49369ea0",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Bold-D1sUS0GD.woff2",
+      "sha256": "e99ae51144bf1232efcc1bfe5add36262c6866b0faab24fa75740e1b98577a62",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Bold-DbIhKOiC.woff",
+      "sha256": "ece03cfd83e22c212cdef66feb8442d25a083beb988db3f1883f3f9738d750ba",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Italic-C3H0VqGB.woff2",
+      "sha256": "00b26ac825e2095056396e0553b8ac26d3f8ad158c3826e28b4c45b385c4714a",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Italic-DN2j7dab.woff",
+      "sha256": "91ee67500cc0129aa0ace3ac5c61ff1692102f0f31d02b69347fba35dcb75bf2",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Italic-YYjJ1zSn.ttf",
+      "sha256": "3931dd81faed86ba021bb2bbdc36f5bed9a38d6b4f4077aca59b265aa1b02083",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Regular-BNo7hRIc.ttf",
+      "sha256": "f36ea897e19f4a2e571d1e900e4e3710e438deb05a842486045ba0a3e616a4ad",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Regular-CS6fqUqJ.woff",
+      "sha256": "11e4dc8a6471ff6d6ee561d53d10fde8f7489e798257ff449c5d37c197435605",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_SansSerif-Regular-DDBCnlJ7.woff2",
+      "sha256": "68e8c73ef42afd3ccec58bf0fba302cce448938e7fc020a5e31f8a952eee1342",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Script-Regular-C5JkGWo-.ttf",
+      "sha256": "1c67f068fea8bb09bf099c088b1cf64bd27516a6e07f4684344873564bb66a67",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Script-Regular-D3wIWfF6.woff2",
+      "sha256": "036d4e95149b69ff9bcc0cd55771efeb25ffa3947293e69acd78d5ac328c684b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Script-Regular-D5yQViql.woff",
+      "sha256": "d96cdf2b3bdd4d64a8fd5f74a4c467f123a8a73931cd435889f08ffaf9bf947a",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size1-Regular-C195tn64.woff",
+      "sha256": "c943cc986384f59e86bea5fd7dc50a9c4dfe567a7c05eb40d6790720dead97c9",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size1-Regular-Dbsnue_I.ttf",
+      "sha256": "95b6d2f1a50173bfedb8c63e1d1c99b10427d0a4df4201cb44513b226951a22b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size1-Regular-mCD8mA8B.woff2",
+      "sha256": "6b47c40166b6dbe21a5dfca7718413f2147fd2399be1ba605d8ad39cedf25dfe",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size2-Regular-B7gKUWhC.ttf",
+      "sha256": "a6b2099fb555c60e3a0db3a08842ebf1d732c6eb4e4bf44913613bed4fc4e39b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size2-Regular-Dy4dx90m.woff2",
+      "sha256": "d04c54219f9eaec6d4d4fd42dfb28785975a4794d6b2fc71e566b9cd6db842dd",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size2-Regular-oD1tc_U0.woff",
+      "sha256": "2014c523c3210bcc166648c4d4cc57f05b747df07a24277bf71c51e67dc79e3d",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size3-Regular-CTq5MqoE.woff",
+      "sha256": "6ab6b62e9b62dae2c00dd90f791bd10950be0ecc3490d7d6045f51c2e8fe0949",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size3-Regular-DgpXs0kz.ttf",
+      "sha256": "500e04d54f0d51666332c9d2089aa803be22aa878eca539e59fa53c6e522b082",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size4-Regular-BF-4gkZK.woff",
+      "sha256": "99f9c6750b489c9462bf04900bd3f939df9b829339daaaaa99ef5495cdddea58",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size4-Regular-DWFBv043.ttf",
+      "sha256": "c647367d1dd4e162468717d020e1fc0f1dc5c26ebfdffbe55261713bf88c5877",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Size4-Regular-Dl5lxZxV.woff2",
+      "sha256": "a4af7d414440a1c1790825cfb700cf9cf43b0f2c4b04f0ebc523011ad9853ec0",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Typewriter-Regular-C0xS9mPB.woff",
+      "sha256": "e14fed02b1aba7ce9f5afd5844b5d0321b22351febc720e0de8b8723527609f7",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Typewriter-Regular-CO6r4hn1.woff2",
+      "sha256": "71d517d67827787cfabdf186914cc3358eda539e37931941f2b2fd4a21f68c0b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/KaTeX_Typewriter-Regular-D3Ib7_Hf.ttf",
+      "sha256": "f01f3e87d9c6a61c0c081ceb577abd864eb00a612f7ac1620dd6915fad2ef5aa",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/engine-04csFKjr.js",
+      "sha256": "201c6c3495592a7df1e947ee313e86631f18619a4b37d7ccedc3f71c8241b459",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/field.worker-DIGzdCgI.js",
+      "sha256": "221d60b5c8100be848eafdaec0bcf4c10bf8ac7b16d9dc295f2949f47c2a783e",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/index-BlSxAZer.css",
+      "sha256": "3c498f26dec59eec89ce848a327287ece40b392712c3bc2dc4008fef8e9b72fd",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/index-vdD548Xr.js",
+      "sha256": "5bac6a620537b73775bc7620e401c53c6cc124e33a3bb96711887ed31303a072",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-400-normal-HOLc17fK.woff",
+      "sha256": "6e441a6c94788318fa02b6d0a633aa29eebe27b69c6567eb1e59b4edc68ed70e",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-400-normal-obahsSVq.woff2",
+      "sha256": "f0bb586459ce8f09b238285040f17e3e9e9538b2c5a7aae0775194e33c36c3c3",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-500-normal-BasfLYem.woff2",
+      "sha256": "b77a86ec16aadc157f4a99e8898d71cd75ea264753d9bdf13f962f8c3988cbb0",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-500-normal-CxZf_p3X.woff",
+      "sha256": "5be18e0345781cb882a267798518553c0e915174fc70731ab5f085ca64ba1ebc",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-600-normal-4D_pXhcN.woff",
+      "sha256": "cc190ed1b64eb650a4ad7e97c7a668cb8b34acd9c4c7f7bf4372c0cbacd35795",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-600-normal-CWCymEST.woff2",
+      "sha256": "6c2a37f82a676bcd441b735e4e2cda4edb8873a059ab9c362a84f0711f257041",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-ext-400-normal-BQZuk6qB.woff2",
+      "sha256": "ef572f9187a8be018d9d9c2c6b77c1f6cb2af4199f02fc16c292ea10ab25a2cc",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-ext-400-normal-DQukG94-.woff",
+      "sha256": "5cb2f1cc0936f89a42ceae34f5a5720248dc5b8114c12b1c33a7d2ef01a9b6b9",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-ext-500-normal-B0yAr1jD.woff2",
+      "sha256": "1c2db92d3cd9b237ca7c9c07af556d542f28ded1db54cd4382cf776501c5291f",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-ext-500-normal-BmqWE9Dz.woff",
+      "sha256": "e250c05aebcf49971e0b25f476992dd463c28c0292ebb204d9db542fb5066ca7",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-ext-600-normal-Bcila6Z-.woff",
+      "sha256": "a5073285409443f4653c858de58c5dc0bfc2fd33e60d8747388345e7c5ab1ab3",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-cyrillic-ext-600-normal-Dfes3d0z.woff2",
+      "sha256": "509fca9c59564f9a846fa69bc647f9b050fc11abf1c9f6f3da71fb2d5ed425bd",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-400-normal-B4URO6DV.woff2",
+      "sha256": "c15ddd00a9927b56f5c655a41f976f79bd848a20cce91fc14227751872a1cc27",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-400-normal-q2sYcFCs.woff",
+      "sha256": "bdae9d28729e8c68587d5d54e216d771a40d7a6800e824586a6e2f570c2f10df",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-500-normal-BIZE56-Y.woff2",
+      "sha256": "cc197d79d33a3615a047baae85f4d1957f6f98b8898313658e160b1d519b1b6f",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-500-normal-Xzm54t5V.woff",
+      "sha256": "86d55a4b1b9cbced7e61e76d5d44cf49d0bd1c814d3df2de67b7136ab4fdcece",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-600-normal-BZpKdvQh.woff",
+      "sha256": "090b24e22fc4ddf41450d13bdec81c8a74808b9fc7edaf8df06c909b177a8992",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-600-normal-plRanbMR.woff2",
+      "sha256": "9c5a897f9d9fcfe60d90631d766ae62b4bf1edd76633fa7a4b2f8c87e036789b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-ext-400-normal-DGGRlc-M.woff2",
+      "sha256": "eadedd9e13c2582430a9fb1519eb86152fdabb483a6f66d90f8d8a52e977a1b7",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-ext-400-normal-KugGGMne.woff",
+      "sha256": "4f2b6f92ddfece8812e79774d446218aa6e0773ff8c2d31130fe2bdc23bd22d0",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-ext-500-normal-2j5mBUwD.woff",
+      "sha256": "c85d11bde719108cc9a4f6f5b008087f6c36493b47395580d4f5336182b0f0c7",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-ext-500-normal-C4iEst2y.woff2",
+      "sha256": "75a9ec9383a3b7a7bf7cfb94f64edf38d9cfdc5f7ffa0cbed2733627a6e4426d",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-ext-600-normal-B8X0CLgF.woff",
+      "sha256": "efc7aa9cce5c505dd8cc4c4daf00247fa805f37bcda96079239ba3358ab27dfb",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-greek-ext-600-normal-DRtmH8MT.woff2",
+      "sha256": "399f94d75aa73403e40e2353e8c0cc75c38f7362a6ca263b3b02d9723157ffe5",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-400-normal-C38fXH4l.woff2",
+      "sha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-400-normal-CyCys3Eg.woff",
+      "sha256": "e20fa0b4fd2dd26e4d14b3ac3cc922509c3a63fa5e910e90c614544aa042dd45",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-500-normal-BL9OpVg8.woff",
+      "sha256": "9b42c108da48b5ed55a3072e815ffee2d271562e6c0dd6998910e8f9c09e0a3d",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-500-normal-Cerq10X2.woff2",
+      "sha256": "f3779f1efccc4bdcdf9c0a02ab95bf6bd092ed09c48c08cedc725889edd1d19f",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-600-normal-CiBQ2DWP.woff",
+      "sha256": "6a9cb3a509b4eeaf12b7dda6c4aacac3e85d07f4201bf4dd716e332e692b87bd",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-600-normal-LgqL8muc.woff2",
+      "sha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-ext-400-normal-77YHD8bZ.woff",
+      "sha256": "22ae8360fbad24d2af7c6c9898a346c881774dc87f7cf94bd262c48ad58d7116",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-ext-400-normal-C1nco2VV.woff2",
+      "sha256": "6744a7f509ebc6ab220a6cd4ea77e898adf014f03d88dcda5d45d8a9feefb4e9",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-ext-500-normal-BxGbmqWO.woff",
+      "sha256": "30d2903ce97f8a89ea0e9c083b42cb8bf97e7bbb5607e7f00352815f19cb0d5b",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-ext-500-normal-CV4jyFjo.woff2",
+      "sha256": "2c6fbc42d315528beb06c1096df45487bf4186c4b78b8111d12c9c951f8acca2",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-ext-600-normal-CIVaiw4L.woff",
+      "sha256": "22ff20a6170674fb9637c2a072227be86303bb6ec52b829b9d7077405f7196a6",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-latin-ext-600-normal-D2bJ5OIk.woff2",
+      "sha256": "e4bdf67b0cd15ca9e184509275be95db942195d3cc2b17f6a0452f2adf75d0bf",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-vietnamese-400-normal-Bbgyi5SW.woff",
+      "sha256": "54aa42d325bcdfd623ecb9eac4a5e3c6420c63d7b86e9d8545fb479f653beb57",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-vietnamese-400-normal-DMkecbls.woff2",
+      "sha256": "547ad9fdaeb0ae43487f4b8a02e47c36553c0c0cb73c8aa98f93b7b615f6b55d",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-vietnamese-500-normal-DOriooB6.woff2",
+      "sha256": "44e36aa5a8f12130029a29bb0e6695d0262b67446ce321e878b1fb56162b5de6",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-vietnamese-500-normal-mJboJaSs.woff",
+      "sha256": "18a4a09f751671cd8929d7c66e8fe7d820b511c36e51cf6047ffceab88eec4a4",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-vietnamese-600-normal-BuLX-rYi.woff",
+      "sha256": "24a01e7bd947aeef91ae8f7b8edeb23fadaf5ceda34a610ce62d2bbdaea57e83",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/inter-vietnamese-600-normal-Cc8MFFhd.woff2",
+      "sha256": "1aeb94ae9db052a4a2fe6f3046f928cff1fdbd7abdf870a9a01c13cae6faeba5",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "assets/lines.worker-BCTFQwMD.js",
+      "sha256": "6a35fa1aaffc3c6281a02a93664195c0037c1cc90e1dfab71b3ca759853fdc85",
+      "sameInCleanBuild": true
+    },
+    {
+      "path": "index.html",
+      "sha256": "11fcf19e672f038ba2a73d1db7108c0acbbd78ef7e8b7dcc71e41d771a73d722",
+      "sameInCleanBuild": true
+    }
+  ]
+}

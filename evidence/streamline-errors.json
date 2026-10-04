@@ -1,0 +1,79 @@
+{
+  "method": "Normalized classical RK4; adaptive two-half-step acceptance with Richardson estimate /15",
+  "uniform": {
+    "perpendicularError": 0,
+    "forwardEndpoint": [
+      2.9999999999992437,
+      -0.64,
+      1.29
+    ],
+    "backwardEndpoint": [
+      -2.999999999999461,
+      -0.64,
+      1.29
+    ],
+    "stops": [
+      "boundary",
+      "boundary"
+    ]
+  },
+  "rotation128": {
+    "error": 9.002948143214938e-8,
+    "accepted": 128,
+    "length": 6.283185307179574,
+    "endpoint": [
+      0.999999992230552,
+      -8.969360738159127e-8,
+      0
+    ]
+  },
+  "helix": {
+    "steps": [
+      32,
+      64,
+      128
+    ],
+    "errors": [
+      0.00005942260257068643,
+      0.0000034937936456930572,
+      2.1537540560645129e-7
+    ],
+    "ratios": [
+      17.00804586554192,
+      16.221878425975696
+    ],
+    "length": 8.885765876316732,
+    "negativeAError": 2.1537540560645129e-7,
+    "backwardError": 2.1537540560645129e-7
+  },
+  "adaptive": {
+    "radius": 0.25,
+    "length": 1.5707963267948966,
+    "endpointErrors": [
+      0.000027629433714079492,
+      0.000002798002885258608
+    ],
+    "maximumGeometryErrors": [
+      0.00002324786553803415,
+      0.0000026183159822223967
+    ],
+    "accepted": [
+      10,
+      16
+    ],
+    "rejected": [
+      0,
+      0
+    ]
+  },
+  "invariants": {
+    "radialCrossProductError": 1.1102230246251565e-16,
+    "saddleProductError": 7.111482641652955e-7
+  },
+  "narrowEllipse": {
+    "length": 3.95836164621509,
+    "accepted": 34,
+    "rejected": 16,
+    "reason": "closed"
+  }
+}

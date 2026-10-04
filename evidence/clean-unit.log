@@ -1,0 +1,13 @@
+$ vitest run
+
+ RUN  v5.0.3 /workspace/inventos-clean-check
+
+
+ Test Files  11 passed (11)
+      Tests  212 passed (212)
+   Start at  11:09:41
+   Duration  3.87s (import 60%, tests 28%, transform 11%, worker 1%)
+
+    Isolate  11 workers spawned · ~197ms startup each (spawn + environment, per file)
+             at least ~525ms faster with isolate: false — reuses workers across files instead of one per file
+

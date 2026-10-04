@@ -1,0 +1,463 @@
+{
+  "expected": [
+    {
+      "id": "0",
+      "tag": "BUTTON",
+      "label": "Archivos y exportación"
+    },
+    {
+      "id": "1",
+      "tag": "BUTTON",
+      "label": "Ayuda"
+    },
+    {
+      "id": "2",
+      "tag": "BUTTON",
+      "label": "Restablecer experimento"
+    },
+    {
+      "id": "3",
+      "tag": "SELECT",
+      "label": "UniformeRadial salienteRadial entranteRotacionalHelicoidalSillaPersonalizado"
+    },
+    {
+      "id": "4",
+      "tag": "INPUT",
+      "label": "Componente P"
+    },
+    {
+      "id": "5",
+      "tag": "INPUT",
+      "label": "Componente Q"
+    },
+    {
+      "id": "6",
+      "tag": "INPUT",
+      "label": "Componente R"
+    },
+    {
+      "id": "7",
+      "tag": "INPUT",
+      "label": "Valor de a"
+    },
+    {
+      "id": "8",
+      "tag": "INPUT",
+      "label": "Deslizador de a"
+    },
+    {
+      "id": "9",
+      "tag": "SUMMARY",
+      "label": "Intervalo del parámetro"
+    },
+    {
+      "id": "10",
+      "tag": "INPUT",
+      "label": "Mínimo de a"
+    },
+    {
+      "id": "11",
+      "tag": "INPUT",
+      "label": "Máximo de a"
+    },
+    {
+      "id": "12",
+      "tag": "INPUT",
+      "label": "Paso de a"
+    },
+    {
+      "id": "13",
+      "tag": "BUTTON",
+      "label": "Restablecer parámetros"
+    },
+    {
+      "id": "14",
+      "tag": "SUMMARY",
+      "label": "Dominio y muestreo"
+    },
+    {
+      "id": "15",
+      "tag": "INPUT",
+      "label": "x mínimo"
+    },
+    {
+      "id": "16",
+      "tag": "INPUT",
+      "label": "x máximo"
+    },
+    {
+      "id": "17",
+      "tag": "INPUT",
+      "label": "y mínimo"
+    },
+    {
+      "id": "18",
+      "tag": "INPUT",
+      "label": "y máximo"
+    },
+    {
+      "id": "19",
+      "tag": "INPUT",
+      "label": "z mínimo"
+    },
+    {
+      "id": "20",
+      "tag": "INPUT",
+      "label": "z máximo"
+    },
+    {
+      "id": "21",
+      "tag": "BUTTON",
+      "label": "Aplicar dominio"
+    },
+    {
+      "id": "22",
+      "tag": "SELECT",
+      "label": "59131721"
+    },
+    {
+      "id": "23",
+      "tag": "SUMMARY",
+      "label": "Representación"
+    },
+    {
+      "id": "24",
+      "tag": "INPUT",
+      "label": null
+    },
+    {
+      "id": "25",
+      "tag": "SELECT",
+      "label": "Campo FRotacional ∇×F"
+    },
+    {
+      "id": "26",
+      "tag": "INPUT",
+      "label": null
+    },
+    {
+      "id": "27",
+      "tag": "INPUT",
+      "label": "field-scale"
+    },
+    {
+      "id": "28",
+      "tag": "BUTTON",
+      "label": "Ajustar escala a las muestras"
+    },
+    {
+      "id": "29",
+      "tag": "INPUT",
+      "label": null
+    },
+    {
+      "id": "30",
+      "tag": "SUMMARY",
+      "label": "Líneas de corriente"
+    },
+    {
+      "id": "31",
+      "tag": "INPUT",
+      "label": null
+    },
+    {
+      "id": "32",
+      "tag": "INPUT",
+      "label": null
+    },
+    {
+      "id": "33",
+      "tag": "SELECT",
+      "label": "163264"
+    },
+    {
+      "id": "34",
+      "tag": "BUTTON",
+      "label": "Regenerar semillas"
+    },
+    {
+      "id": "35",
+      "tag": "BUTTON",
+      "label": "Añadir punto inspeccionado"
+    },
+    {
+      "id": "36",
+      "tag": "BUTTON",
+      "label": "Eliminar última"
+    },
+    {
+      "id": "37",
+      "tag": "BUTTON",
+      "label": "Vaciar semillas"
+    },
+    {
+      "id": "38",
+      "tag": "SUMMARY",
+      "label": "Cortes y análisis"
+    },
+    {
+      "id": "39",
+      "tag": "INPUT",
+      "label": null
+    },
+    {
+      "id": "40",
+      "tag": "SELECT",
+      "label": "XYXZYZ"
+    },
+    {
+      "id": "41",
+      "tag": "INPUT",
+      "label": "Posición · z"
+    },
+    {
+      "id": "42",
+      "tag": "SELECT",
+      "label": "65 × 65129 × 129"
+    },
+    {
+      "id": "43",
+      "tag": "SELECT",
+      "label": "Sin escalarMagnitud ‖F‖Divergencia ∇·F"
+    },
+    {
+      "id": "44",
+      "tag": "INPUT",
+      "label": "Límite de magnitud"
+    },
+    {
+      "id": "45",
+      "tag": "BUTTON",
+      "label": "Ajustar escala escalar"
+    },
+    {
+      "id": "46",
+      "tag": "BUTTON",
+      "label": "Vista perpendicular al corte"
+    },
+    {
+      "id": "47",
+      "tag": "SUMMARY",
+      "label": "Métodos numéricos"
+    },
+    {
+      "id": "48",
+      "tag": "SELECT",
+      "label": "AutomáticoDiferencias finitas"
+    },
+    {
+      "id": "49",
+      "tag": "INPUT",
+      "label": "Paso relativo η"
+    },
+    {
+      "id": "50",
+      "tag": "SELECT",
+      "label": "RK4 adaptativoRK4 de paso fijo"
+    },
+    {
+      "id": "51",
+      "tag": "INPUT",
+      "label": "Paso inicial / diagonal"
+    },
+    {
+      "id": "52",
+      "tag": "INPUT",
+      "label": "Paso mínimo / diagonal"
+    },
+    {
+      "id": "53",
+      "tag": "INPUT",
+      "label": "Paso máximo / diagonal"
+    },
+    {
+      "id": "54",
+      "tag": "INPUT",
+      "label": "Tolerancia absoluta / diagonal"
+    },
+    {
+      "id": "55",
+      "tag": "INPUT",
+      "label": "Tolerancia relativa"
+    },
+    {
+      "id": "56",
+      "tag": "INPUT",
+      "label": "Umbral de magnitud"
+    },
+    {
+      "id": "57",
+      "tag": "INPUT",
+      "label": "Longitud máxima / diagonal"
+    },
+    {
+      "id": "58",
+      "tag": "INPUT",
+      "label": "Pasos por sentido"
+    },
+    {
+      "id": "59",
+      "tag": "INPUT",
+      "label": null
+    },
+    {
+      "id": "60",
+      "tag": "SUMMARY",
+      "label": "Calidad gráfica"
+    },
+    {
+      "id": "61",
+      "tag": "SELECT",
+      "label": "Ligera · 1Estándar · 1,5Alta · 2"
+    },
+    {
+      "id": "62",
+      "tag": "BUTTON",
+      "label": "XY"
+    },
+    {
+      "id": "63",
+      "tag": "BUTTON",
+      "label": "XZ"
+    },
+    {
+      "id": "64",
+      "tag": "BUTTON",
+      "label": "YZ"
+    },
+    {
+      "id": "65",
+      "tag": "BUTTON",
+      "label": "3D"
+    },
+    {
+      "id": "66",
+      "tag": "BUTTON",
+      "label": "Restablecer cámara"
+    },
+    {
+      "id": "67",
+      "tag": "BUTTON",
+      "label": "Abrir inspector"
+    },
+    {
+      "id": "68",
+      "tag": "CANVAS",
+      "label": "Escena tridimensional del campo. Cursores: órbita; Mayús y cursores: desplazamiento; más y menos: zoom; Inicio: encuadrar."
+    },
+    {
+      "id": "69",
+      "tag": "BUTTON",
+      "label": "Cerrar inspector"
+    },
+    {
+      "id": "70",
+      "tag": "INPUT",
+      "label": "Punto x"
+    },
+    {
+      "id": "71",
+      "tag": "INPUT",
+      "label": "Punto y"
+    },
+    {
+      "id": "72",
+      "tag": "INPUT",
+      "label": "Punto z"
+    },
+    {
+      "id": "73",
+      "tag": "BUTTON",
+      "label": "Consultar punto"
+    },
+    {
+      "id": "74",
+      "tag": "SUMMARY",
+      "label": "Jacobiano"
+    },
+    {
+      "id": "75",
+      "tag": "BUTTON",
+      "label": "Añadir punto como semilla"
+    }
+  ],
+  "reached": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
+    "16",
+    "17",
+    "18",
+    "19",
+    "20",
+    "21",
+    "22",
+    "23",
+    "24",
+    "25",
+    "26",
+    "27",
+    "28",
+    "29",
+    "30",
+    "31",
+    "32",
+    "33",
+    "34",
+    "35",
+    "36",
+    "37",
+    "38",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "46",
+    "47",
+    "48",
+    "49",
+    "50",
+    "51",
+    "52",
+    "53",
+    "54",
+    "55",
+    "56",
+    "57",
+    "58",
+    "59",
+    "60",
+    "61",
+    "62",
+    "63",
+    "64",
+    "65",
+    "66",
+    "67",
+    "68",
+    "69",
+    "70",
+    "71",
+    "72",
+    "73",
+    "74",
+    "75",
+    "0"
+  ],
+  "allReachable": true
+}

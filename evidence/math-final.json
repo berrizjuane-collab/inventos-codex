@@ -1,0 +1,2571 @@
+{
+  "generatedAt": "2026-10-02T10:04:21.380Z",
+  "command": "node scripts/math-report.mjs",
+  "purpose": "Independent mathematical error evidence for the implemented engine; complements rather than reruns unit and streamline tests.",
+  "versions": {
+    "package": "1.0.0",
+    "engine": "1.0.0",
+    "node": "v24.19.0",
+    "packageManager": "pnpm@11.19.0",
+    "dependencies": {
+      "@fontsource/inter": "5.3.0",
+      "katex": "0.18.10",
+      "mathjs": "15.2.0",
+      "react": "19.3.0",
+      "react-dom": "19.3.0",
+      "three": "0.186.1",
+      "zod": "4.6.5"
+    },
+    "developmentDependencies": {
+      "@axe-core/playwright": "4.13.0",
+      "@playwright/test": "1.63.0",
+      "@types/katex": "0.16.8",
+      "@types/node": "26.6.3",
+      "@types/react": "19.3.0",
+      "@types/react-dom": "19.3.0",
+      "@types/three": "0.186.0",
+      "@vitejs/plugin-react": "6.1.1",
+      "typescript": "7.0.2",
+      "vite": "8.3.1",
+      "vitest": "5.0.3"
+    }
+  },
+  "comparisonRule": "abs(actual-reference) <= atol + rtol*abs(reference); no rounding before comparison",
+  "pointSet": {
+    "kind": "Fixed Cartesian product",
+    "coordinates": [
+      -2,
+      -1,
+      0,
+      1,
+      2
+    ],
+    "pointsPerCase": 125,
+    "domain": [
+      [
+        -3,
+        -3,
+        -3
+      ],
+      [
+        3,
+        3,
+        3
+      ]
+    ],
+    "helicoidalParameterA": 1
+  },
+  "jacobianOrdering": {
+    "rows": [
+      "P",
+      "Q",
+      "R"
+    ],
+    "columns": [
+      "x",
+      "y",
+      "z"
+    ],
+    "componentErrors": "Flattened row-major order"
+  },
+  "summary": {
+    "passed": true,
+    "fieldCount": 8,
+    "caseCount": 16,
+    "sampleCount": 2000,
+    "scalarComparisonCount": 34000,
+    "failureCount": 0
+  },
+  "results": [
+    {
+      "field": "uniform",
+      "requestedMethod": "auto",
+      "components": [
+        "1",
+        "0",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-12,
+        "rtol": 1e-12,
+        "source": "VALIDATION.md MAT-01"
+      },
+      "methods": {
+        "analytic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1,
+            "reference": 1
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1,
+            "reference": 1
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "uniform",
+      "requestedMethod": "finite",
+      "components": [
+        "1",
+        "0",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-8,
+        "rtol": 1e-8,
+        "source": "VALIDATION.md MAT-02"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1,
+            "reference": 1
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1,
+            "reference": 1
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "outward",
+      "requestedMethod": "auto",
+      "components": [
+        "x",
+        "y",
+        "z"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-12,
+        "rtol": 1e-12,
+        "source": "VALIDATION.md MAT-01"
+      },
+      "methods": {
+        "analytic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -2,
+            "reference": -2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3.4641016151377544,
+            "reference": 3.4641016151377544
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1,
+            "reference": 1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3,
+            "reference": 3
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "outward",
+      "requestedMethod": "finite",
+      "components": [
+        "x",
+        "y",
+        "z"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-8,
+        "rtol": 1e-8,
+        "source": "VALIDATION.md MAT-02"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 1.233457780358549e-13,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -2,
+            "reference": -2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3.4641016151377544,
+            "reference": 3.4641016151377544
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 2.5979218776228663e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.000012989609388114332,
+          "componentMaxAbsoluteErrors": [
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            2.5979218776228663e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1.0000000000002598,
+            "reference": 1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 7.793765632868599e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.000019484414082171497,
+          "componentMaxAbsoluteErrors": [
+            7.793765632868599e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3.0000000000007794,
+            "reference": 3
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "inward",
+      "requestedMethod": "auto",
+      "components": [
+        "-x",
+        "-y",
+        "-z"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-12,
+        "rtol": 1e-12,
+        "source": "VALIDATION.md MAT-01"
+      },
+      "methods": {
+        "analytic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2,
+            "reference": 2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3.4641016151377544,
+            "reference": 3.4641016151377544
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -1,
+            "reference": -1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -3,
+            "reference": -3
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "inward",
+      "requestedMethod": "finite",
+      "components": [
+        "-x",
+        "-y",
+        "-z"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-8,
+        "rtol": 1e-8,
+        "source": "VALIDATION.md MAT-02"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 1.233457780358549e-13,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2,
+            "reference": 2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3.4641016151377544,
+            "reference": 3.4641016151377544
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 2.5979218776228663e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.000012989609388114332,
+          "componentMaxAbsoluteErrors": [
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            2.5979218776228663e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -1.0000000000002598,
+            "reference": -1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 7.793765632868599e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.000019484414082171497,
+          "componentMaxAbsoluteErrors": [
+            7.793765632868599e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -3.0000000000007794,
+            "reference": -3
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "rotation",
+      "requestedMethod": "auto",
+      "components": [
+        "-y",
+        "x",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-12,
+        "rtol": 1e-12,
+        "source": "VALIDATION.md MAT-01"
+      },
+      "methods": {
+        "analytic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2,
+            "reference": 2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2.8284271247461903,
+            "reference": 2.8284271247461903
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "rotation",
+      "requestedMethod": "finite",
+      "components": [
+        "-y",
+        "x",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-8,
+        "rtol": 1e-8,
+        "source": "VALIDATION.md MAT-02"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 1.233457780358549e-13,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2,
+            "reference": 2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2.8284271247461903,
+            "reference": 2.8284271247461903
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 2.5979218776228663e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.000012989609388114332,
+          "componentMaxAbsoluteErrors": [
+            0,
+            2.5979218776228663e-13,
+            0,
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 1,
+            "actual": -1.0000000000002598,
+            "reference": -1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 5.195843755245733e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.00001731947918415244,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            5.195843755245733e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 2,
+            "actual": 2.0000000000005196,
+            "reference": 2
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "helix",
+      "requestedMethod": "auto",
+      "components": [
+        "-y",
+        "x",
+        "a"
+      ],
+      "parameters": {
+        "a": {
+          "value": 1,
+          "min": -3,
+          "max": 3,
+          "step": 0.1
+        }
+      },
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-12,
+        "rtol": 1e-12,
+        "source": "VALIDATION.md MAT-01"
+      },
+      "methods": {
+        "analytic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2,
+            "reference": 2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3,
+            "reference": 3
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "helix",
+      "requestedMethod": "finite",
+      "components": [
+        "-y",
+        "x",
+        "a"
+      ],
+      "parameters": {
+        "a": {
+          "value": 1,
+          "min": -3,
+          "max": 3,
+          "step": 0.1
+        }
+      },
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-8,
+        "rtol": 1e-8,
+        "source": "VALIDATION.md MAT-02"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 1.233457780358549e-13,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2,
+            "reference": 2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 3,
+            "reference": 3
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 2.5979218776228663e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.000012989609388114332,
+          "componentMaxAbsoluteErrors": [
+            0,
+            2.5979218776228663e-13,
+            0,
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 1,
+            "actual": -1.0000000000002598,
+            "reference": -1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 5.195843755245733e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.00001731947918415244,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            5.195843755245733e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 2,
+            "actual": 2.0000000000005196,
+            "reference": 2
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "saddle",
+      "requestedMethod": "auto",
+      "components": [
+        "x",
+        "-y",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-12,
+        "rtol": 1e-12,
+        "source": "VALIDATION.md MAT-01"
+      },
+      "methods": {
+        "analytic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -2,
+            "reference": -2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2.8284271247461903,
+            "reference": 2.8284271247461903
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1,
+            "reference": 1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "saddle",
+      "requestedMethod": "finite",
+      "components": [
+        "x",
+        "-y",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-8,
+        "rtol": 1e-8,
+        "source": "VALIDATION.md MAT-02"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 1.233457780358549e-13,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -2,
+            "reference": -2
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 2.8284271247461903,
+            "reference": 2.8284271247461903
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 2.5979218776228663e-13,
+          "maximumRelativeErrorAtNonzeroReference": 2.5979218776228663e-13,
+          "maximumToleranceRatio": 0.000012989609388114332,
+          "componentMaxAbsoluteErrors": [
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            2.5979218776228663e-13,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 1.0000000000002598,
+            "reference": 1
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 3.700373341075647e-13,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0.00003700373341075647,
+          "componentMaxAbsoluteErrors": [
+            3.700373341075647e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -1,
+              -2
+            ],
+            "component": 0,
+            "actual": 3.700373341075647e-13,
+            "reference": 0
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "custom-polynomial",
+      "requestedMethod": "auto",
+      "components": [
+        "x*y+z^2",
+        "x^2-y",
+        "z*x"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-10,
+        "rtol": 1e-8,
+        "source": "Additional independent smooth-field checks"
+      },
+      "methods": {
+        "symbolic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 8,
+            "reference": 8
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 1.7763568394002505e-15,
+          "maximumRelativeErrorAtNonzeroReference": 2.2032994911073528e-16,
+          "maximumToleranceRatio": 2.200570019923691e-8,
+          "componentMaxAbsoluteErrors": [
+            1.7763568394002505e-15
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -1
+            ],
+            "component": 0,
+            "actual": 8.062257748298551,
+            "reference": 8.06225774829855
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -2,
+            "reference": -2
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -5,
+            "reference": -5
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0,
+            "reference": 0
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "custom-polynomial",
+      "requestedMethod": "finite",
+      "components": [
+        "x*y+z^2",
+        "x^2-y",
+        "z*x"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 0.0001,
+        "rtol": 0.001,
+        "source": "Additional independent smooth-field checks"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 9.869142540234559e-13,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 8,
+            "reference": 8
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 1.7763568394002505e-15,
+          "maximumRelativeErrorAtNonzeroReference": 2.2032994911073528e-16,
+          "maximumToleranceRatio": 2.176305740615136e-13,
+          "componentMaxAbsoluteErrors": [
+            1.7763568394002505e-15
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -1
+            ],
+            "component": 0,
+            "actual": 8.062257748298551,
+            "reference": 8.06225774829855
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 2.5197621766892553e-12,
+          "maximumRelativeErrorAtNonzeroReference": 6.299405441723138e-13,
+          "maximumToleranceRatio": 6.145761406559159e-10,
+          "componentMaxAbsoluteErrors": [
+            1.2598810883446276e-12,
+            1.2598810883446276e-12,
+            2.5197621766892553e-12,
+            2.5197621766892553e-12,
+            6.299405441723138e-13,
+            0,
+            5.195843755245733e-13,
+            0,
+            5.195843755245733e-13
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 2,
+            "actual": -4.00000000000252,
+            "reference": -4
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 2.4096280526464398e-12,
+          "maximumRelativeErrorAtNonzeroReference": 1.3697931677825181e-12,
+          "maximumToleranceRatio": 1.1104450692300816e-8,
+          "componentMaxAbsoluteErrors": [
+            2.4096280526464398e-12
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -5.00000000000241,
+            "reference": -5
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 2.7400304247748863e-12,
+          "maximumRelativeErrorAtNonzeroReference": 1.3700152123874432e-12,
+          "maximumToleranceRatio": 1.304776392749946e-9,
+          "componentMaxAbsoluteErrors": [
+            0,
+            2.7400304247748863e-12,
+            2.7400304247748863e-12
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -1,
+              -1
+            ],
+            "component": 2,
+            "actual": -2.00000000000274,
+            "reference": -2
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "custom-trigonometric",
+      "requestedMethod": "auto",
+      "components": [
+        "sin(x)*cos(y)",
+        "exp(z)",
+        "log(x+4)"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 1e-10,
+        "rtol": 1e-8,
+        "source": "Additional independent smooth-field checks"
+      },
+      "methods": {
+        "symbolic": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 0,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0.37840124765396416,
+            "reference": 0.37840124765396416
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 8.881784197001252e-16,
+          "maximumRelativeErrorAtNonzeroReference": 2.627530630366798e-16,
+          "maximumToleranceRatio": 2.619780438295276e-8,
+          "componentMaxAbsoluteErrors": [
+            8.881784197001252e-16
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -1,
+              2
+            ],
+            "component": 0,
+            "actual": 7.437739865838188,
+            "reference": 7.4377398658381875
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0.17317818956819406,
+            "reference": 0.17317818956819406
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0.17317818956819406,
+            "reference": 0.17317818956819406
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": -0.1353352832366127,
+            "reference": -0.1353352832366127
+          }
+        }
+      },
+      "passed": true
+    },
+    {
+      "field": "custom-trigonometric",
+      "requestedMethod": "finite",
+      "components": [
+        "sin(x)*cos(y)",
+        "exp(z)",
+        "log(x+4)"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "eta": 0.0001,
+      "pointCount": 125,
+      "tolerance": {
+        "atol": 0.0001,
+        "rtol": 0.001,
+        "source": "Additional independent smooth-field checks"
+      },
+      "methods": {
+        "finite": 125
+      },
+      "reliability": {
+        "reliable": 125,
+        "unreliable": 0,
+        "unavailable": 0
+      },
+      "invalidEvaluations": 0,
+      "largestReportedDerivativeError": 1.1083479793209487e-7,
+      "errors": {
+        "components": {
+          "comparisons": 375,
+          "maxAbsoluteError": 0,
+          "maximumRelativeErrorAtNonzeroReference": 0,
+          "maximumToleranceRatio": 0,
+          "componentMaxAbsoluteErrors": [
+            0,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              -2
+            ],
+            "component": 0,
+            "actual": 0.37840124765396416,
+            "reference": 0.37840124765396416
+          }
+        },
+        "norm": {
+          "comparisons": 125,
+          "maxAbsoluteError": 8.881784197001252e-16,
+          "maximumRelativeErrorAtNonzeroReference": 2.627530630366798e-16,
+          "maximumToleranceRatio": 2.552032909517803e-13,
+          "componentMaxAbsoluteErrors": [
+            8.881784197001252e-16
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -1,
+              2
+            ],
+            "component": 0,
+            "actual": 7.437739865838188,
+            "reference": 7.4377398658381875
+          }
+        },
+        "jacobian": {
+          "comparisons": 1125,
+          "maxAbsoluteError": 1.1083790862898013e-7,
+          "maximumRelativeErrorAtNonzeroReference": 1.5000496906453147e-8,
+          "maximumToleranceRatio": 0.000014799983758274488,
+          "componentMaxAbsoluteErrors": [
+            1.4999999908837935e-8,
+            1.2402112115061925e-8,
+            0,
+            0,
+            0,
+            1.1083790862898013e-7,
+            3.75046327327766e-9,
+            0,
+            0
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              2
+            ],
+            "component": 5,
+            "actual": 7.389056209768559,
+            "reference": 7.38905609893065
+          }
+        },
+        "divergence": {
+          "comparisons": 125,
+          "maxAbsoluteError": 1.4999999908837935e-8,
+          "maximumRelativeErrorAtNonzeroReference": 1.5000496906453147e-8,
+          "maximumToleranceRatio": 0.000013636363553489032,
+          "componentMaxAbsoluteErrors": [
+            1.4999999908837935e-8
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              0,
+              0,
+              -2
+            ],
+            "component": 0,
+            "actual": 0.9999999850000001,
+            "reference": 1
+          }
+        },
+        "curl": {
+          "comparisons": 375,
+          "maxAbsoluteError": 1.1083790862898013e-7,
+          "maximumRelativeErrorAtNonzeroReference": 1.5000279757656825e-8,
+          "maximumToleranceRatio": 0.000014799983758274488,
+          "componentMaxAbsoluteErrors": [
+            1.1083790862898013e-7,
+            3.75046327327766e-9,
+            1.2402112115061925e-8
+          ],
+          "worstAbsoluteError": {
+            "point": [
+              -2,
+              -2,
+              2
+            ],
+            "component": 0,
+            "actual": -7.389056209768559,
+            "reference": -7.38905609893065
+          }
+        }
+      },
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "failuresTruncated": false,
+  "existingEvidence": {
+    "unitSuite": "evidence/h4-unit.json",
+    "streamlines": {
+      "source": "evidence/streamline-errors.json",
+      "report": {
+        "method": "Normalized classical RK4; adaptive two-half-step acceptance with Richardson estimate /15",
+        "uniform": {
+          "perpendicularError": 0,
+          "forwardEndpoint": [
+            2.9999999999992437,
+            -0.64,
+            1.29
+          ],
+          "backwardEndpoint": [
+            -2.999999999999461,
+            -0.64,
+            1.29
+          ],
+          "stops": [
+            "boundary",
+            "boundary"
+          ]
+        },
+        "rotation128": {
+          "error": 9.002948143214938e-8,
+          "accepted": 128,
+          "length": 6.283185307179574,
+          "endpoint": [
+            0.999999992230552,
+            -8.969360738159127e-8,
+            0
+          ]
+        },
+        "helix": {
+          "steps": [
+            32,
+            64,
+            128
+          ],
+          "errors": [
+            0.00005942260257068643,
+            0.0000034937936456930572,
+            2.1537540560645129e-7
+          ],
+          "ratios": [
+            17.00804586554192,
+            16.221878425975696
+          ],
+          "length": 8.885765876316732,
+          "negativeAError": 2.1537540560645129e-7,
+          "backwardError": 2.1537540560645129e-7
+        },
+        "adaptive": {
+          "radius": 0.25,
+          "length": 1.5707963267948966,
+          "endpointErrors": [
+            0.000027629433714079492,
+            0.000002798002885258608
+          ],
+          "maximumGeometryErrors": [
+            0.00002324786553803415,
+            0.0000026183159822223967
+          ],
+          "accepted": [
+            10,
+            16
+          ],
+          "rejected": [
+            0,
+            0
+          ]
+        },
+        "invariants": {
+          "radialCrossProductError": 1.1102230246251565e-16,
+          "saddleProductError": 7.111482641652955e-7
+        },
+        "narrowEllipse": {
+          "length": 3.95836164621509,
+          "accepted": 34,
+          "rejected": 16,
+          "reason": "closed"
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Additional curated fields do not certify arbitrary expressions or scales.",
+    "Unit-suite counts are intentionally left to the linked test report.",
+    "This script does not regenerate streamline or browser evidence."
+  ]
+}

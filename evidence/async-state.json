@@ -1,0 +1,379 @@
+{
+  "final": {
+    "revision": 6,
+    "busy": false,
+    "stats": {
+      "valid": 729,
+      "invalid": 0,
+      "zeros": 9,
+      "fieldMs": 5.100000001490116,
+      "linesMs": 16.5,
+      "partial": false,
+      "inactiveSeeds": 0
+    },
+    "config": {
+      "schemaVersion": 1,
+      "engineVersion": "1.0.0",
+      "fieldId": "rotation",
+      "components": [
+        "-y",
+        "x",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          -3,
+          -3,
+          -3
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "resolution": 9,
+      "numerics": {
+        "derivativeMethod": "auto",
+        "eta": 0.0001,
+        "integration": "adaptive",
+        "stepFactor": 0.01,
+        "minStepFactor": 0.000001,
+        "maxStepFactor": 0.025,
+        "atolFactor": 0.000001,
+        "rtol": 0.00001,
+        "zeroThreshold": 1e-10,
+        "maxLengthFactor": 8,
+        "maxSteps": 1500,
+        "closeLoops": true
+      },
+      "seeds": [
+        [
+          0,
+          -0.7999999999999998,
+          -1.44
+        ],
+        [
+          -1.1999999999999997,
+          0.7999999999999998,
+          -0.47999999999999954
+        ],
+        [
+          1.2000000000000002,
+          -1.8666666666666667,
+          0.4800000000000004
+        ],
+        [
+          -1.7999999999999998,
+          -0.2666666666666666,
+          1.4400000000000004
+        ],
+        [
+          0.5999999999999996,
+          1.333333333333333,
+          -2.208
+        ],
+        [
+          -0.5999999999999996,
+          -1.3333333333333333,
+          -1.2479999999999998
+        ],
+        [
+          1.8000000000000007,
+          0.26666666666666705,
+          -0.28799999999999937
+        ],
+        [
+          -2.0999999999999996,
+          1.8666666666666671,
+          0.6720000000000006
+        ],
+        [
+          0.30000000000000027,
+          -2.2222222222222223,
+          1.6320000000000006
+        ],
+        [
+          -0.9000000000000004,
+          -0.6222222222222227,
+          -2.016
+        ],
+        [
+          1.5,
+          0.9777777777777779,
+          -1.0559999999999996
+        ],
+        [
+          -1.5,
+          -1.6888888888888889,
+          -0.0959999999999992
+        ],
+        [
+          0.9000000000000004,
+          -0.08888888888888902,
+          0.8639999999999999
+        ],
+        [
+          -0.2999999999999998,
+          1.511111111111111,
+          1.8239999999999998
+        ],
+        [
+          2.0999999999999996,
+          -1.1555555555555554,
+          -1.8239999999999998
+        ],
+        [
+          -2.25,
+          0.44444444444444464,
+          -0.8639999999999999
+        ]
+      ],
+      "layers": {
+        "arrows": true,
+        "vectors": "field",
+        "lines": true,
+        "seeds": true,
+        "axes": true,
+        "cut": false,
+        "scalar": "none"
+      },
+      "slice": {
+        "plane": "XY",
+        "position": 0,
+        "resolution": 65
+      },
+      "scales": {
+        "field": 0.1,
+        "curl": 0.2,
+        "magnitude": 6,
+        "divergence": 3,
+        "directionOnly": false
+      },
+      "graphics": {
+        "pixelRatio": 1.5
+      },
+      "camera": {
+        "position": [
+          8,
+          -10,
+          7
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "zoom": 1
+      },
+      "inspected": [
+        1,
+        0,
+        0
+      ]
+    },
+    "selected": {
+      "point": [
+        1,
+        0,
+        0
+      ],
+      "evaluation": {
+        "valid": true,
+        "vector": [
+          0,
+          1,
+          0
+        ],
+        "norm": 1
+      },
+      "derivative": {
+        "valid": true,
+        "jacobian": [
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "divergence": 0,
+        "curl": [
+          0,
+          0,
+          2
+        ],
+        "method": "analytic",
+        "error": 0,
+        "reliable": true
+      }
+    },
+    "scene": {
+      "valid": 729,
+      "invalid": 0,
+      "unreliable": 0,
+      "zero": 9,
+      "tiny": 0,
+      "saturated": 0,
+      "maximumLength": 0.6000000000000001,
+      "scale": 0.1,
+      "projectedZero": 0,
+      "perpendicularPositive": 0,
+      "perpendicularNegative": 0,
+      "directionOnly": false,
+      "lineVertices": 1614,
+      "chevrons": 362,
+      "webgl": true,
+      "pixelRatio": 1,
+      "camera": {
+        "position": [
+          8,
+          -10,
+          7
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "zoom": 1
+      },
+      "coordinateOrigin": [
+        0,
+        0,
+        0
+      ],
+      "drawCalls": 28,
+      "geometries": 9,
+      "textures": 6,
+      "programs": 4,
+      "renderFrames": 17,
+      "renderSamples": 17,
+      "minRenderMs": 1,
+      "medianRenderMs": 24.5,
+      "p95RenderMs": 81.70000000298023
+    }
+  },
+  "trace": [
+    {
+      "type": "validation",
+      "id": 1,
+      "delay": 0
+    },
+    {
+      "type": "result",
+      "revision": 2,
+      "delay": 0
+    },
+    {
+      "type": "inspection",
+      "revision": 2,
+      "id": 2,
+      "delay": 0
+    },
+    {
+      "type": "lines",
+      "revision": 2,
+      "id": 1,
+      "delay": 0
+    },
+    {
+      "type": "validation",
+      "id": 3,
+      "delay": 0
+    },
+    {
+      "type": "result",
+      "revision": 3,
+      "delay": 900
+    },
+    {
+      "type": "inspection",
+      "revision": 3,
+      "id": 4,
+      "delay": 0
+    },
+    {
+      "type": "lines",
+      "revision": 3,
+      "id": 2,
+      "delay": 0
+    },
+    {
+      "type": "result",
+      "revision": 4,
+      "delay": 0
+    },
+    {
+      "type": "inspection",
+      "revision": 4,
+      "id": 5,
+      "delay": 0
+    },
+    {
+      "type": "validation",
+      "id": 6,
+      "delay": 0
+    },
+    {
+      "type": "lines",
+      "revision": 4,
+      "id": 3,
+      "delay": 900
+    },
+    {
+      "type": "result",
+      "revision": 5,
+      "delay": 0
+    },
+    {
+      "type": "inspection",
+      "revision": 5,
+      "id": 7,
+      "delay": 0
+    },
+    {
+      "type": "validation",
+      "id": 8,
+      "delay": 0
+    },
+    {
+      "type": "result",
+      "revision": 6,
+      "delay": 0
+    },
+    {
+      "type": "inspection",
+      "revision": 6,
+      "id": 9,
+      "delay": 0
+    },
+    {
+      "type": "validation",
+      "id": 10,
+      "delay": 0
+    },
+    {
+      "type": "lines",
+      "revision": 5,
+      "id": 4,
+      "delay": 900
+    },
+    {
+      "type": "lines",
+      "revision": 6,
+      "id": 5,
+      "delay": 900
+    }
+  ]
+}

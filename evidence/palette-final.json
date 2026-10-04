@@ -1,0 +1,603 @@
+{
+  "method": "Every RGB pixel: R=G=B, including antialiased text, scene and PNG metadata.",
+  "images": 85,
+  "pixels": 95103912,
+  "nonneutralPixels": 0,
+  "results": [
+    {
+      "path": "evidence/captures/final-curl-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-curl-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-curl-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-curl-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-curl-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-curl-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-negative-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-negative-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-negative-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-negative-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-negative-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-negative-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-positive-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-positive-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-positive-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-positive-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-positive-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-positive-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-zero-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-zero-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-zero-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-zero-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-zero-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-divergence-zero-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-helix-editor-inspector-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-helix-editor-inspector-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-helix-editor-inspector-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-helix-editor-inspector-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-helix-editor-inspector-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-helix-editor-inspector-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-initial-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-initial-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-initial-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-initial-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-initial-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-initial-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-invalid-expression-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-invalid-expression-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-invalid-expression-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-invalid-expression-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-invalid-expression-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-invalid-expression-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-lines-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-lines-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-lines-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-lines-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-lines-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-lines-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-magnitude-slice-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-magnitude-slice-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-magnitude-slice-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-magnitude-slice-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-magnitude-slice-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-magnitude-slice-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-maximum-density-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-maximum-density-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-maximum-density-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-maximum-density-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-maximum-density-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-maximum-density-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-menu-help-focus-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-menu-help-focus-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-menu-help-focus-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-menu-help-focus-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-menu-help-focus-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-menu-help-focus-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-narrow-offset-domain.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-partial-field-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-partial-field-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-partial-field-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-partial-field-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-partial-field-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-partial-field-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-reduced-motion-zoom200-1024x768.png",
+      "width": 1024,
+      "height": 768,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-reduced-motion-zoom200-1280x720.png",
+      "width": 1280,
+      "height": 720,
+      "pixels": 921600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-reduced-motion-zoom200-1440x900.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-reduced-motion-zoom200-1920x1080.png",
+      "width": 1920,
+      "height": 1080,
+      "pixels": 2073600,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-reduced-motion-zoom200-390x844.png",
+      "width": 390,
+      "height": 844,
+      "pixels": 329160,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/final-reduced-motion-zoom200-768x1024.png",
+      "width": 768,
+      "height": 1024,
+      "pixels": 786432,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/captures/h4-native-zoom-200.png",
+      "width": 1440,
+      "height": 900,
+      "pixels": 1296000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/exports/campo-1600.png",
+      "width": 1600,
+      "height": 1000,
+      "pixels": 1600000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/exports/campo-2400.png",
+      "width": 2400,
+      "height": 1500,
+      "pixels": 3600000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/exports/extenso-1600.png",
+      "width": 1600,
+      "height": 1000,
+      "pixels": 1600000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/exports/extenso-2400.png",
+      "width": 2400,
+      "height": 1500,
+      "pixels": 3600000,
+      "nonneutralPixels": 0
+    },
+    {
+      "path": "evidence/exports/narrow-offset-1600.png",
+      "width": 1600,
+      "height": 1000,
+      "pixels": 1600000,
+      "nonneutralPixels": 0
+    }
+  ]
+}

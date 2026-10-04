@@ -1,0 +1,30 @@
+[
+  {
+    "name": "Texto principal",
+    "fg": "#f5f5f5",
+    "bg": "#181818",
+    "minimum": 4.5,
+    "contrast": 16.286699626745726
+  },
+  {
+    "name": "Texto secundario",
+    "fg": "#b0b0b0",
+    "bg": "#242424",
+    "minimum": 4.5,
+    "contrast": 7.157593831176048
+  },
+  {
+    "name": "Borde funcional",
+    "fg": "#808080",
+    "bg": "#242424",
+    "minimum": 3,
+    "contrast": 3.9304083113026325
+  },
+  {
+    "name": "Flechas",
+    "fg": "#d0d0d0",
+    "bg": "#101010",
+    "minimum": 3,
+    "contrast": 12.336687663340337
+  }
+]

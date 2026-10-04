@@ -1,0 +1,16 @@
+{
+  "reportType": "Recorded summary; not the full Playwright JSON reporter",
+  "basis": "Final Playwright terminal output and JSON stats read during this session before the reporter was overwritten by the 19 affected-flow rerun.",
+  "stats": {
+    "startTime": "2026-10-02T10:42:50.582Z",
+    "duration": 423190.333,
+    "expected": 96,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "terminalResult": "96 passed (7.1m)",
+  "visualCases": 78,
+  "visualEvidence": "evidence/captures/final-<scenario>-<size>.png",
+  "subsequentChange": "Immediate mathematical-pending state; graphical composition unchanged. 19 affected flows rechecked in e2e-affected-final.json."
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "engineVersion": "1.0.0",
+  "fieldId": "custom",
+  "components": [
+    "a*x+b",
+    "sin(y)",
+    "c*z"
+  ],
+  "parameters": {
+    "a": {
+      "value": 0.125,
+      "min": -2,
+      "max": 3,
+      "step": 0.025
+    },
+    "b": {
+      "value": -0.375,
+      "min": -5,
+      "max": 5,
+      "step": 0.05
+    },
+    "c": {
+      "value": 3.141592653589793,
+      "min": 0,
+      "max": 4,
+      "step": 0.01
+    }
+  },
+  "domain": [
+    [
+      -2,
+      -1,
+      -0.5
+    ],
+    [
+      4,
+      3,
+      2.5
+    ]
+  ],
+  "resolution": 13,
+  "numerics": {
+    "derivativeMethod": "finite",
+    "eta": 0.00002,
+    "integration": "adaptive",
+    "stepFactor": 0.01,
+    "minStepFactor": 0.000001,
+    "maxStepFactor": 0.025,
+    "atolFactor": 0.000001,
+    "rtol": 0.000002,
+    "zeroThreshold": 1e-10,
+    "maxLengthFactor": 8,
+    "maxSteps": 700,
+    "closeLoops": true
+  },
+  "seeds": [
+    [
+      0.12345678901234568,
+      -0.5,
+      0.75
+    ],
+    [
+      15,
+      0,
+      0
+    ]
+  ],
+  "layers": {
+    "arrows": true,
+    "vectors": "curl",
+    "lines": false,
+    "seeds": true,
+    "axes": true,
+    "cut": true,
+    "scalar": "divergence"
+  },
+  "slice": {
+    "plane": "XZ",
+    "position": 0.5,
+    "resolution": 65
+  },
+  "scales": {
+    "field": 0.37,
+    "curl": 0.19,
+    "magnitude": 9,
+    "divergence": 4,
+    "directionOnly": true
+  },
+  "graphics": {
+    "pixelRatio": 1
+  },
+  "camera": {
+    "position": [
+      9,
+      -6,
+      5
+    ],
+    "target": [
+      0.5,
+      0.25,
+      0.125
+    ],
+    "zoom": 1.75
+  },
+  "inspected": [
+    0.12345678901234568,
+    0.5,
+    1
+  ]
+}

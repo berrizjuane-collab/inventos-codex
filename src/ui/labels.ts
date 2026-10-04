@@ -1,0 +1,2 @@
+import type { StopReason } from '../experiment/types';
+export const stopLabels:Record<StopReason,string>={boundary:'frontera',undefined:'campo no definido',zero:'magnitud bajo umbral','min-step':'paso mínimo','max-length':'longitud máxima','max-steps':'pasos máximos',vertices:'vértices máximos',time:'presupuesto de tiempo',cancelled:'cancelación',closed:'cierre aproximado',outside:'semilla exterior'};

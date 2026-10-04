@@ -1,0 +1,292 @@
+{
+  "comparison": {
+    "width": 1120,
+    "height": 615,
+    "foreground": 67882,
+    "meanForegroundDifference": 0
+  },
+  "domain": [
+    [
+      9999.999,
+      9999.999,
+      9999.999
+    ],
+    [
+      10000,
+      10000,
+      10000
+    ]
+  ],
+  "state": {
+    "revision": 5,
+    "busy": false,
+    "stats": {
+      "valid": 9261,
+      "invalid": 0,
+      "zeros": 0,
+      "fieldMs": 58.69999999925494,
+      "linesMs": 0,
+      "partial": false,
+      "inactiveSeeds": 0
+    },
+    "config": {
+      "schemaVersion": 1,
+      "engineVersion": "1.0.0",
+      "fieldId": "uniform",
+      "components": [
+        "1",
+        "0",
+        "0"
+      ],
+      "parameters": {},
+      "domain": [
+        [
+          9999.999,
+          9999.999,
+          9999.999
+        ],
+        [
+          10000,
+          10000,
+          10000
+        ]
+      ],
+      "resolution": 21,
+      "numerics": {
+        "derivativeMethod": "auto",
+        "eta": 0.0001,
+        "integration": "adaptive",
+        "stepFactor": 0.01,
+        "minStepFactor": 0.000001,
+        "maxStepFactor": 0.025,
+        "atolFactor": 0.000001,
+        "rtol": 0.00001,
+        "zeroThreshold": 1e-10,
+        "maxLengthFactor": 8,
+        "maxSteps": 1500,
+        "closeLoops": true
+      },
+      "seeds": [],
+      "layers": {
+        "arrows": true,
+        "vectors": "field",
+        "lines": false,
+        "seeds": false,
+        "axes": false,
+        "cut": true,
+        "scalar": "magnitude"
+      },
+      "slice": {
+        "plane": "XY",
+        "position": 9999.9995,
+        "resolution": 65
+      },
+      "scales": {
+        "field": 0.1,
+        "curl": 0.2,
+        "magnitude": 6,
+        "divergence": 3,
+        "directionOnly": true
+      },
+      "graphics": {
+        "pixelRatio": 1.5
+      },
+      "camera": {
+        "position": [
+          9999.9995,
+          9999.999499996537,
+          10000.002964101615
+        ],
+        "target": [
+          9999.9995,
+          9999.9995,
+          9999.9995
+        ],
+        "zoom": 1.468779084818408
+      },
+      "inspected": [
+        9999.99931530343,
+        9999.999437502074,
+        9999.9995
+      ]
+    },
+    "selected": {
+      "point": [
+        9999.99931530343,
+        9999.999437502074,
+        9999.9995
+      ],
+      "evaluation": {
+        "valid": true,
+        "vector": [
+          1,
+          0,
+          0
+        ],
+        "norm": 1
+      },
+      "derivative": {
+        "valid": true,
+        "jacobian": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "divergence": 0,
+        "curl": [
+          0,
+          0,
+          0
+        ],
+        "method": "analytic",
+        "error": 0,
+        "reliable": true
+      }
+    },
+    "scene": {
+      "valid": 441,
+      "invalid": 0,
+      "unreliable": 0,
+      "zero": 0,
+      "tiny": 0,
+      "saturated": 0,
+      "maximumLength": 0.00004000000000814908,
+      "scale": 0.1,
+      "projectedZero": 0,
+      "perpendicularPositive": 0,
+      "perpendicularNegative": 0,
+      "directionOnly": true,
+      "lineVertices": 0,
+      "chevrons": 0,
+      "cutValid": 4225,
+      "cutInvalid": 0,
+      "cutMissing": 0,
+      "cutUnreliable": 0,
+      "cutSaturated": 0,
+      "cutAnalyticZero": false,
+      "cutNearZero": 0,
+      "webgl": true,
+      "pixelRatio": 1,
+      "camera": {
+        "position": [
+          9999.9995,
+          9999.999499996537,
+          10000.002964101615
+        ],
+        "target": [
+          9999.9995,
+          9999.9995,
+          9999.9995
+        ],
+        "zoom": 1.468779084818408
+      },
+      "coordinateOrigin": [
+        9999.9995,
+        9999.9995,
+        9999.9995
+      ],
+      "drawCalls": 9,
+      "geometries": 6,
+      "textures": 4,
+      "programs": 4,
+      "renderFrames": 16,
+      "renderSamples": 16,
+      "minRenderMs": 0.6000000014901161,
+      "medianRenderMs": 1.099999999627471,
+      "p95RenderMs": 104.19999999925494
+    }
+  },
+  "json": {
+    "schemaVersion": 1,
+    "engineVersion": "1.0.0",
+    "fieldId": "uniform",
+    "components": [
+      "1",
+      "0",
+      "0"
+    ],
+    "parameters": {},
+    "domain": [
+      [
+        9999.999,
+        9999.999,
+        9999.999
+      ],
+      [
+        10000,
+        10000,
+        10000
+      ]
+    ],
+    "resolution": 21,
+    "numerics": {
+      "derivativeMethod": "auto",
+      "eta": 0.0001,
+      "integration": "adaptive",
+      "stepFactor": 0.01,
+      "minStepFactor": 0.000001,
+      "maxStepFactor": 0.025,
+      "atolFactor": 0.000001,
+      "rtol": 0.00001,
+      "zeroThreshold": 1e-10,
+      "maxLengthFactor": 8,
+      "maxSteps": 1500,
+      "closeLoops": true
+    },
+    "seeds": [],
+    "layers": {
+      "arrows": true,
+      "vectors": "field",
+      "lines": false,
+      "seeds": false,
+      "axes": false,
+      "cut": true,
+      "scalar": "magnitude"
+    },
+    "slice": {
+      "plane": "XY",
+      "position": 9999.9995,
+      "resolution": 65
+    },
+    "scales": {
+      "field": 0.1,
+      "curl": 0.2,
+      "magnitude": 6,
+      "divergence": 3,
+      "directionOnly": true
+    },
+    "graphics": {
+      "pixelRatio": 1.5
+    },
+    "camera": {
+      "position": [
+        9999.9995,
+        9999.999499996537,
+        10000.002964101615
+      ],
+      "target": [
+        9999.9995,
+        9999.9995,
+        9999.9995
+      ],
+      "zoom": 1.468779084818408
+    },
+    "inspected": [
+      9999.99931530343,
+      9999.999437502074,
+      9999.9995
+    ]
+  }
+}

@@ -1,0 +1,839 @@
+{
+  "nativeZoomVerified": true,
+  "generatedAt": "2026-10-02T17:52:08.474Z",
+  "mechanism": "Headful Chromium on local Xorg dummy; libXtst XTestFakeKeyEvent through Python ctypes",
+  "display": ":99",
+  "deviceMetricsEmulation": false,
+  "cssZoom": false,
+  "pageScaleEmulation": false,
+  "input": [
+    {
+      "action": "reset",
+      "display": ":99",
+      "window": 2097155,
+      "title": "Campo · Laboratorio vectorial - Chromium",
+      "focus": 2097155,
+      "keycodes": [
+        37,
+        19
+      ],
+      "xTestVersion": [
+        2,
+        2
+      ],
+      "windowDiscovery": {
+        "stage": "before-focus",
+        "windows": [
+          {
+            "id": 2097152,
+            "title": "Chromium clipboard",
+            "legacyTitle": "Chromium clipboard",
+            "mapState": 0,
+            "class": 2,
+            "x": -100,
+            "y": -100,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194305,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 2,
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097158,
+            "title": "",
+            "legacyTitle": "",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 2097155,
+            "title": "Campo · Laboratorio vectorial - Chromium",
+            "legacyTitle": "",
+            "mapState": 2,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000,
+            "overrideRedirect": false,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "id": 2097155,
+          "title": "Campo · Laboratorio vectorial - Chromium",
+          "legacyTitle": "",
+          "mapState": 2,
+          "class": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000,
+          "overrideRedirect": false,
+          "eligible": true
+        },
+        "preference": "Campo title, then largest IsViewable InputOutput window"
+      }
+    },
+    {
+      "action": "resize",
+      "display": ":99",
+      "window": 2097155,
+      "title": "Campo · Laboratorio vectorial - Chromium",
+      "focus": 2097155,
+      "keycodes": [],
+      "xTestVersion": [
+        2,
+        2
+      ],
+      "windowDiscovery": {
+        "stage": "before-focus",
+        "windows": [
+          {
+            "id": 2097152,
+            "title": "Chromium clipboard",
+            "legacyTitle": "Chromium clipboard",
+            "mapState": 0,
+            "class": 2,
+            "x": -100,
+            "y": -100,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194305,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 2,
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097158,
+            "title": "",
+            "legacyTitle": "",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 2097155,
+            "title": "Campo · Laboratorio vectorial - Chromium",
+            "legacyTitle": "",
+            "mapState": 2,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 1000,
+            "overrideRedirect": false,
+            "eligible": true
+          },
+          {
+            "id": 4194307,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 200,
+            "height": 200,
+            "overrideRedirect": false,
+            "eligible": false
+          }
+        ],
+        "selected": {
+          "id": 2097155,
+          "title": "Campo · Laboratorio vectorial - Chromium",
+          "legacyTitle": "",
+          "mapState": 2,
+          "class": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 1000,
+          "overrideRedirect": false,
+          "eligible": true
+        },
+        "preference": "Campo title, then largest IsViewable InputOutput window"
+      }
+    },
+    {
+      "action": "zoom-in",
+      "display": ":99",
+      "window": 2097155,
+      "title": "Campo · Laboratorio vectorial - Chromium",
+      "focus": 2097155,
+      "keycodes": [
+        37,
+        21
+      ],
+      "xTestVersion": [
+        2,
+        2
+      ],
+      "windowDiscovery": {
+        "stage": "before-focus",
+        "windows": [
+          {
+            "id": 2097152,
+            "title": "Chromium clipboard",
+            "legacyTitle": "Chromium clipboard",
+            "mapState": 0,
+            "class": 2,
+            "x": -100,
+            "y": -100,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194305,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 2,
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097158,
+            "title": "",
+            "legacyTitle": "",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194307,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 200,
+            "height": 200,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097155,
+            "title": "Campo · Laboratorio vectorial - Chromium",
+            "legacyTitle": "",
+            "mapState": 2,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 987,
+            "overrideRedirect": false,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "id": 2097155,
+          "title": "Campo · Laboratorio vectorial - Chromium",
+          "legacyTitle": "",
+          "mapState": 2,
+          "class": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 987,
+          "overrideRedirect": false,
+          "eligible": true
+        },
+        "preference": "Campo title, then largest IsViewable InputOutput window"
+      }
+    },
+    {
+      "action": "zoom-in",
+      "display": ":99",
+      "window": 2097155,
+      "title": "Campo · Laboratorio vectorial - Chromium",
+      "focus": 2097155,
+      "keycodes": [
+        37,
+        21
+      ],
+      "xTestVersion": [
+        2,
+        2
+      ],
+      "windowDiscovery": {
+        "stage": "before-focus",
+        "windows": [
+          {
+            "id": 2097152,
+            "title": "Chromium clipboard",
+            "legacyTitle": "Chromium clipboard",
+            "mapState": 0,
+            "class": 2,
+            "x": -100,
+            "y": -100,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194305,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 2,
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097158,
+            "title": "",
+            "legacyTitle": "",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194307,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 200,
+            "height": 200,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097155,
+            "title": "Campo · Laboratorio vectorial - Chromium",
+            "legacyTitle": "",
+            "mapState": 2,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 987,
+            "overrideRedirect": false,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "id": 2097155,
+          "title": "Campo · Laboratorio vectorial - Chromium",
+          "legacyTitle": "",
+          "mapState": 2,
+          "class": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 987,
+          "overrideRedirect": false,
+          "eligible": true
+        },
+        "preference": "Campo title, then largest IsViewable InputOutput window"
+      }
+    },
+    {
+      "action": "zoom-in",
+      "display": ":99",
+      "window": 2097155,
+      "title": "Campo · Laboratorio vectorial - Chromium",
+      "focus": 2097155,
+      "keycodes": [
+        37,
+        21
+      ],
+      "xTestVersion": [
+        2,
+        2
+      ],
+      "windowDiscovery": {
+        "stage": "before-focus",
+        "windows": [
+          {
+            "id": 2097152,
+            "title": "Chromium clipboard",
+            "legacyTitle": "Chromium clipboard",
+            "mapState": 0,
+            "class": 2,
+            "x": -100,
+            "y": -100,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194305,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 2,
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097158,
+            "title": "",
+            "legacyTitle": "",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194307,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 200,
+            "height": 200,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097155,
+            "title": "Campo · Laboratorio vectorial - Chromium",
+            "legacyTitle": "",
+            "mapState": 2,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 987,
+            "overrideRedirect": false,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "id": 2097155,
+          "title": "Campo · Laboratorio vectorial - Chromium",
+          "legacyTitle": "",
+          "mapState": 2,
+          "class": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 987,
+          "overrideRedirect": false,
+          "eligible": true
+        },
+        "preference": "Campo title, then largest IsViewable InputOutput window"
+      }
+    },
+    {
+      "action": "zoom-in",
+      "display": ":99",
+      "window": 2097155,
+      "title": "Campo · Laboratorio vectorial - Chromium",
+      "focus": 2097155,
+      "keycodes": [
+        37,
+        21
+      ],
+      "xTestVersion": [
+        2,
+        2
+      ],
+      "windowDiscovery": {
+        "stage": "before-focus",
+        "windows": [
+          {
+            "id": 2097152,
+            "title": "Chromium clipboard",
+            "legacyTitle": "Chromium clipboard",
+            "mapState": 0,
+            "class": 2,
+            "x": -100,
+            "y": -100,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194305,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 2,
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097158,
+            "title": "",
+            "legacyTitle": "",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194307,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 200,
+            "height": 200,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097155,
+            "title": "Campo · Laboratorio vectorial - Chromium",
+            "legacyTitle": "",
+            "mapState": 2,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 987,
+            "overrideRedirect": false,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "id": 2097155,
+          "title": "Campo · Laboratorio vectorial - Chromium",
+          "legacyTitle": "",
+          "mapState": 2,
+          "class": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 987,
+          "overrideRedirect": false,
+          "eligible": true
+        },
+        "preference": "Campo title, then largest IsViewable InputOutput window"
+      }
+    },
+    {
+      "action": "zoom-in",
+      "display": ":99",
+      "window": 2097155,
+      "title": "Campo · Laboratorio vectorial - Chromium",
+      "focus": 2097155,
+      "keycodes": [
+        37,
+        21
+      ],
+      "xTestVersion": [
+        2,
+        2
+      ],
+      "windowDiscovery": {
+        "stage": "before-focus",
+        "windows": [
+          {
+            "id": 2097152,
+            "title": "Chromium clipboard",
+            "legacyTitle": "Chromium clipboard",
+            "mapState": 0,
+            "class": 2,
+            "x": -100,
+            "y": -100,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194305,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 2,
+            "x": 10,
+            "y": 10,
+            "width": 10,
+            "height": 10,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097158,
+            "title": "",
+            "legacyTitle": "",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1,
+            "height": 1,
+            "overrideRedirect": true,
+            "eligible": false
+          },
+          {
+            "id": 4194307,
+            "title": "chromium",
+            "legacyTitle": "chromium",
+            "mapState": 0,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 200,
+            "height": 200,
+            "overrideRedirect": false,
+            "eligible": false
+          },
+          {
+            "id": 2097155,
+            "title": "Campo · Laboratorio vectorial - Chromium",
+            "legacyTitle": "",
+            "mapState": 2,
+            "class": 1,
+            "x": 0,
+            "y": 0,
+            "width": 1440,
+            "height": 987,
+            "overrideRedirect": false,
+            "eligible": true
+          }
+        ],
+        "selected": {
+          "id": 2097155,
+          "title": "Campo · Laboratorio vectorial - Chromium",
+          "legacyTitle": "",
+          "mapState": 2,
+          "class": 1,
+          "x": 0,
+          "y": 0,
+          "width": 1440,
+          "height": 987,
+          "overrideRedirect": false,
+          "eligible": true
+        },
+        "preference": "Campo title, then largest IsViewable InputOutput window"
+      }
+    }
+  ],
+  "errors": [],
+  "checks": {
+    "nativeViewportHalved": true,
+    "noHorizontalOverflow": true,
+    "reducedMotion": false,
+    "editorFocusReachable": true,
+    "controlsEscapeReturnsFocus": true,
+    "inspectorFocusReachable": true,
+    "inspectorEscapeReturnsFocus": true,
+    "helpReachable": true,
+    "helpEscapeReturnsFocus": true,
+    "controlsDoNotChangeNativeZoom": true,
+    "noPageErrors": true
+  },
+  "previousAttempt": {
+    "nativeZoomVerified": false
+  },
+  "before": {
+    "innerWidth": 1440,
+    "innerHeight": 900,
+    "outerWidth": 1440,
+    "outerHeight": 987,
+    "dpr": 1,
+    "scrollWidth": 1440,
+    "horizontalOverflow": false,
+    "reducedMotion": false,
+    "canvas": {
+      "x": 320,
+      "y": 213.3125,
+      "width": 1120,
+      "height": 492.6875
+    }
+  },
+  "zoomSteps": [
+    {
+      "innerWidth": 1309,
+      "innerHeight": 818,
+      "outerWidth": 1440,
+      "outerHeight": 987,
+      "dpr": 1.100000023841858,
+      "scrollWidth": 1309,
+      "horizontalOverflow": false,
+      "reducedMotion": false,
+      "canvas": {
+        "x": 320,
+        "y": 213.7357940673828,
+        "width": 989.0908813476562,
+        "height": 411.9317932128906
+      }
+    },
+    {
+      "innerWidth": 1152,
+      "innerHeight": 720,
+      "outerWidth": 1440,
+      "outerHeight": 987,
+      "dpr": 1.25,
+      "scrollWidth": 1152,
+      "horizontalOverflow": false,
+      "reducedMotion": false,
+      "canvas": {
+        "x": 288,
+        "y": 209.9250030517578,
+        "width": 864,
+        "height": 315.6750183105469
+      }
+    },
+    {
+      "innerWidth": 960,
+      "innerHeight": 600,
+      "outerWidth": 1440,
+      "outerHeight": 987,
+      "dpr": 1.5,
+      "scrollWidth": 960,
+      "horizontalOverflow": false,
+      "reducedMotion": false,
+      "canvas": {
+        "x": 0,
+        "y": 195.65625,
+        "width": 960,
+        "height": 221.0104217529297
+      }
+    },
+    {
+      "innerWidth": 823,
+      "innerHeight": 514,
+      "outerWidth": 1440,
+      "outerHeight": 987,
+      "dpr": 1.75,
+      "scrollWidth": 823,
+      "horizontalOverflow": false,
+      "reducedMotion": false,
+      "canvas": {
+        "x": 0,
+        "y": 195.75001525878906,
+        "width": 822.857177734375,
+        "height": 135.10714721679688
+      }
+    },
+    {
+      "innerWidth": 720,
+      "innerHeight": 450,
+      "outerWidth": 1440,
+      "outerHeight": 987,
+      "dpr": 2,
+      "scrollWidth": 720,
+      "horizontalOverflow": false,
+      "reducedMotion": false,
+      "canvas": {
+        "x": 0,
+        "y": 253.921875,
+        "width": 712.5,
+        "height": 144
+      }
+    }
+  ],
+  "after": {
+    "innerWidth": 720,
+    "innerHeight": 450,
+    "outerWidth": 1440,
+    "outerHeight": 987,
+    "dpr": 2,
+    "scrollWidth": 720,
+    "horizontalOverflow": false,
+    "reducedMotion": false,
+    "canvas": {
+      "x": 0,
+      "y": 253.921875,
+      "width": 712.5,
+      "height": 144
+    }
+  },
+  "browserVersion": "151.0.7922.173",
+  "final": {
+    "innerWidth": 720,
+    "innerHeight": 450,
+    "outerWidth": 1440,
+    "outerHeight": 987,
+    "dpr": 2,
+    "scrollWidth": 720,
+    "horizontalOverflow": false,
+    "reducedMotion": false,
+    "canvas": {
+      "x": 0,
+      "y": 253.921875,
+      "width": 712.5,
+      "height": 144
+    }
+  },
+  "capture": "evidence/captures/h4-native-zoom-200.png",
+  "passed": false,
+  "failure": "A native-zoom layout/accessibility check failed."
+}
