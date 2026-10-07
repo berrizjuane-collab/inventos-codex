@@ -1,77 +1,89 @@
 import * as THREE from 'three';
-export function lowMountainMaterial(death:THREE.IUniform<number>) {
-  const material=new THREE.MeshLambertMaterial({color:0xffffff,vertexColors:true});
+/** Shared, geographically registered textures in every quality profile. */
+export function mountainMaterial(albedo:THREE.Texture,normal:THREE.Texture,grain:THREE.Texture,death:THREE.IUniform<number>,low=false) {
+  albedo.colorSpace=THREE.SRGBColorSpace; normal.colorSpace=THREE.NoColorSpace;
+  for(const t of [albedo,normal]) {t.anisotropy=4;t.wrapS=t.wrapT=THREE.ClampToEdgeWrapping;}
+  grain.colorSpace=THREE.NoColorSpace;grain.wrapS=grain.wrapT=THREE.RepeatWrapping;grain.anisotropy=4;
+  const options={map:albedo,normalMap:normal,normalMapType:THREE.ObjectSpaceNormalMap,color:0xffffff};
+  const material=low?new THREE.MeshLambertMaterial({map:albedo,color:0xffffff}):new THREE.MeshStandardMaterial({...options,roughness:.94,metalness:0});
   material.onBeforeCompile=shader=>{
     shader.uniforms.deathEnabled=death;
-    shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying float atlasAltitude;')
-      .replace('#include <begin_vertex>','#include <begin_vertex>\natlasAltitude=transformed.y+4500.;');
-    shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying float atlasAltitude;\nuniform float deathEnabled;')
-      .replace('#include <color_fragment>','#include <color_fragment>\nfloat extreme=smoothstep(7998.,8005.,atlasAltitude)*deathEnabled;\ndiffuseColor.rgb=mix(diffuseColor.rgb,vec3(.63,.35,.32),extreme*.23);\nfloat contour=(1.-smoothstep(2.,12.,abs(atlasAltitude-8000.)))*deathEnabled;\ndiffuseColor.rgb=mix(diffuseColor.rgb,vec3(.75,.38,.33),contour*.6);');
+    if(low) {
+      // The registered albedo already contains strata, cracks and snow detail.
+      // Keep that visible without three extra grain samples per pixel on Auto's
+      // smallest devices. Higher profiles add per-pixel normals and triplanar grain.
+      shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying float atlasAltitude;')
+        .replace('#include <begin_vertex>','#include <begin_vertex>\natlasAltitude=transformed.y+4500.;');
+      shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying float atlasAltitude;uniform float deathEnabled;')
+        .replace('#include <color_fragment>',`#include <color_fragment>
+          float extreme=smoothstep(7998.,8005.,atlasAltitude)*deathEnabled;
+          diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.63,.35,.32),extreme*.20);
+          float contour=(1.-smoothstep(2.,12.,abs(atlasAltitude-8000.)))*deathEnabled;
+          diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.75,.38,.33),contour*.6);`);
+      return;
+    }
+    shader.uniforms.rockGrain={value:grain};
+    shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying float atlasAltitude; varying vec3 atlasPosition,atlasNormal;')
+      .replace('#include <beginnormal_vertex>','#include <beginnormal_vertex>\natlasNormal=objectNormal;')
+      .replace('#include <begin_vertex>','#include <begin_vertex>\natlasAltitude=transformed.y+4500.;atlasPosition=transformed;');
+    shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying float atlasAltitude; varying vec3 atlasPosition,atlasNormal;\nuniform float deathEnabled;uniform sampler2D rockGrain;')
+      .replace('#include <color_fragment>',`#include <color_fragment>
+        vec3 atlasWeights=pow(abs(normalize(atlasNormal)),vec3(4.));
+        atlasWeights/=max(dot(atlasWeights,vec3(1.)),.0001);
+        float atlasGrain=texture2D(rockGrain,atlasPosition.yz/128.).r*atlasWeights.x
+          +texture2D(rockGrain,atlasPosition.xz/128.).r*atlasWeights.y
+          +texture2D(rockGrain,atlasPosition.xy/128.).r*atlasWeights.z;
+        float atlasRock=1.-smoothstep(.17,.43,dot(diffuseColor.rgb,vec3(.333)));
+        diffuseColor.rgb*=1.+(atlasGrain-.5)*mix(.10,.95,atlasRock);
+        float extreme=smoothstep(7998.,8005.,atlasAltitude)*deathEnabled;
+        diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.63,.35,.32),extreme*.20);
+        float contour=(1.-smoothstep(2.,12.,abs(atlasAltitude-8000.)))*deathEnabled;
+        diffuseColor.rgb=mix(diffuseColor.rgb,vec3(.75,.38,.33),contour*.6);`)
+      .replace('#include <normal_fragment_maps>',`#include <normal_fragment_maps>
+        vec2 atlasGradient=vec2(dFdx(atlasGrain),dFdy(atlasGrain));
+        vec3 atlasDx=dFdx(vViewPosition),atlasDy=dFdy(vViewPosition);
+        vec3 atlasR1=cross(atlasDy,normal),atlasR2=cross(normal,atlasDx);
+        float atlasDet=dot(atlasDx,atlasR1);
+        vec3 atlasSurfaceGradient=sign(atlasDet)*(atlasGradient.x*atlasR1+atlasGradient.y*atlasR2);
+        normal=normalize(abs(atlasDet)*normal-atlasSurfaceGradient*mix(.06,.65,atlasRock));`);
   };
-  material.customProgramCacheKey=()=> 'k2-low-diffuse-1';
+  material.customProgramCacheKey=()=> low?'k2-textured-diffuse-4':'k2-textured-relief-3';
   return material;
 }
-export function mountainMaterial(detail:THREE.Texture,death:THREE.IUniform<number>) {
-  detail.colorSpace=THREE.NoColorSpace;detail.wrapS=detail.wrapT=THREE.RepeatWrapping;detail.anisotropy=2;
-  const material=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.96,metalness:0});
-  material.onBeforeCompile=shader=>{
-    shader.uniforms.deathEnabled=death;shader.uniforms.rockDetail={value:detail};
-    shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 atlasPosition;\nvarying vec3 atlasNormal;')
-      .replace('#include <beginnormal_vertex>','#include <beginnormal_vertex>\natlasNormal = normalize(objectNormal);')
-      .replace('#include <begin_vertex>','#include <begin_vertex>\natlasPosition = transformed;');
-    shader.fragmentShader=shader.fragmentShader.replace('#include <common>',[
-      '#include <common>',
-      'varying vec3 atlasPosition; varying vec3 atlasNormal; uniform float deathEnabled; uniform sampler2D rockDetail;',
-      'float atlasHash(vec2 p) { return fract(sin(dot(p,vec2(127.1,311.7)))*43758.5453); }',
-      'float atlasNoise(vec2 p) { vec2 i=floor(p),f=fract(p); f=f*f*(3.0-2.0*f);',
-      'return mix(mix(atlasHash(i),atlasHash(i+vec2(1.,0.)),f.x),mix(atlasHash(i+vec2(0.,1.)),atlasHash(i+vec2(1.)),f.x),f.y); }'
-    ].join('\n'));
-    shader.fragmentShader=shader.fragmentShader.replace('#include <color_fragment>',[
-      '#include <color_fragment>',
-      'vec3 p=atlasPosition; vec3 n=normalize(atlasNormal); float altitude=p.y+4500.;',
-      'float large=atlasNoise(p.xz*.004), fine=atlasNoise(p.xz*.024);',
-      'float strata=.5+.5*sin(p.y*.068+p.x*.009+large*3.);',
-      'vec3 weights=pow(abs(n),vec3(4.)); weights/=max(dot(weights,vec3(1.)),.0001);',
-      'float grain=texture2D(rockDetail,p.yz/220.).r*weights.x+texture2D(rockDetail,p.xz/220.).r*weights.y+texture2D(rockDetail,p.xy/220.).r*weights.z;',
-      'vec3 stone=mix(vec3(.15,.17,.185),vec3(.29,.285,.27),large*.55+fine*.20); stone*=.88+.05*strata+.17*grain;',
-      'float couloir=pow(max(0.,sin(p.x*.025+p.z*.015+large*4.)),16.)*.27;',
-      'float snow=smoothstep(.52,.85,n.y+(fine-.5)*.14-n.z*.05)+couloir;',
-      'snow=max(clamp(snow,0.,1.),smoothstep(8150.,8580.,altitude)*.88);',
-      'snow*=smoothstep(5100.,5650.,altitude);',
-      'float valley=abs(p.x-(3300.-p.z*.63));',
-      'float glacier=(1.-smoothstep(400.,1000.,valley))*(1.-smoothstep(5300.,5850.,altitude))*smoothstep(.40,.70,n.y); snow=max(snow,glacier*.9);',
-      'vec3 ice=mix(vec3(.62,.70,.76),vec3(.81,.855,.89),fine*.45+grain*.45); vec3 albedo=mix(stone,ice,snow);',
-      'float moraine=(.5+.5*sin(p.x*.036+p.z*.026+large*2.))*glacier; albedo=mix(albedo,stone,moraine*.20);',
-      'float extreme=smoothstep(7998.,8005.,altitude)*deathEnabled; albedo=mix(albedo,vec3(.63,.35,.32),extreme*.23);',
-      'float contour=(1.-smoothstep(2.,12.,abs(altitude-8000.)))*deathEnabled; albedo=mix(albedo,vec3(.75,.38,.33),contour*.60);',
-      'diffuseColor.rgb*=albedo;'
-    ].join('\n'));
-    shader.fragmentShader=shader.fragmentShader.replace('#include <normal_fragment_maps>', [
-      '#include <normal_fragment_maps>',
-      'vec2 atlasGradient=vec2(dFdx(grain),dFdy(grain));',
-      'vec3 atlasDx=dFdx(vViewPosition),atlasDy=dFdy(vViewPosition);',
-      'vec3 atlasR1=cross(atlasDy,normal),atlasR2=cross(normal,atlasDx);',
-      'float atlasDet=dot(atlasDx,atlasR1);',
-      'vec3 atlasSurfaceGradient=sign(atlasDet)*(atlasGradient.x*atlasR1+atlasGradient.y*atlasR2);',
-      'normal=normalize(abs(atlasDet)*normal-atlasSurfaceGradient*mix(.28,.045,snow));'
-    ].join('\n'));
-  };
-  material.customProgramCacheKey=()=> 'k2-atlas-material-1';
-  return material;
-}
-export function createSerac(field:{sample:(x:number,z:number)=>number},position:readonly number[]) {
+export function createSerac(field:{sample:(x:number,z:number)=>number},position:readonly number[],grain:THREE.Texture) {
   const group=new THREE.Group(),boxes:THREE.Box3[]=[];
-  const material=new THREE.MeshStandardMaterial({color:0x9fbfcd,roughness:.92,metalness:0,side:THREE.DoubleSide});
+  const material=new THREE.MeshStandardMaterial({color:0xffffff,roughness:.86,metalness:0,side:THREE.DoubleSide});
+  material.onBeforeCompile=shader=>{
+    shader.uniforms.iceGrain={value:grain};
+    shader.vertexShader=shader.vertexShader.replace('#include <common>','#include <common>\nvarying vec3 icePosition;')
+      .replace('#include <begin_vertex>','#include <begin_vertex>\nicePosition=transformed;');
+    shader.fragmentShader=shader.fragmentShader.replace('#include <common>','#include <common>\nvarying vec3 icePosition;uniform sampler2D iceGrain;')
+      .replace('#include <color_fragment>',`#include <color_fragment>
+        float iceDetail=texture2D(iceGrain,icePosition.xy/48.).r;
+        float vein=pow(.5+.5*sin(icePosition.x*.23+icePosition.y*.017+iceDetail*3.),18.);
+        vec3 iceColor=mix(vec3(.36,.54,.65),vec3(.72,.82,.87),.28+iceDetail*.66);
+        iceColor*=1.-vein*.20;
+        diffuseColor.rgb*=iceColor;`);
+  };
+  material.customProgramCacheKey=()=> 'k2-reconstructed-ice-2';
   const geometry=new THREE.BufferGeometry(),vertices:number[]=[],indices:number[]=[],fractures:number[]=[];
-  // One continuous reconstructed ice wall with a modest overhanging lip.
-  for(let i=0;i<=12;i++) {
-    const x=position[0]+(i-6)*15,z=position[2]+Math.pow(i-6,2)*1.1-13,ground=field.sample(x,z+20);
-    const top=Math.max(ground+62+5*Math.sin(i*2.1),field.sample(x,z-28)+8);
-    vertices.push(x,ground+1,z+20, x,top,z+37+3*Math.sin(i), x,top+6,z-28, x,field.sample(x,z-28),z-28);
-    if(i<12){const a=i*4,b=a+4;
-      indices.push(a,b,a+1,b,b+1,a+1,a+1,b+1,a+2,b+1,b+2,a+2,a+2,b+2,a+3,b+2,b+3,a+3);}
-    if(i>0&&i<12&&i%2===0)fractures.push(x,top-2,z+39,x+3,ground+18,z+26);
-    boxes.push(new THREE.Box3(new THREE.Vector3(x-10,ground,z-32),new THREE.Vector3(x+10,top+10,z+45)));
+  // An eroded front, recessed base and overhanging lip form one closed volume.
+  const sections=24;
+  for(let i=0;i<=sections;i++) {
+    const t=i/sections,x=position[0]+(t-.5)*190,z=position[2]+(t-.5)**2*65-13;
+    const front=z+24,back=z-28,ground=field.sample(x,front)-3;
+    const rearGround=field.sample(x,back)-3;
+    const top=Math.max(ground+72,rearGround+16)+5*Math.sin(i*.91)+3*Math.sin(i*2.37);
+    const span=top-ground;
+    vertices.push(x,ground,front, x,ground+span*.38,front+5,
+      x,ground+span*.77,front+13+Math.sin(i*.72)*3,
+      x,top,front+23+Math.sin(i*.51)*4, x,top+3,back, x,rearGround,back);
+    if(i<sections){const a=i*6,b=a+6;
+      for(let edge=0;edge<5;edge++)indices.push(a+edge,b+edge,a+edge+1,b+edge,b+edge+1,a+edge+1);}
+    if(i===0||i===sections){const a=i*6;for(let edge=1;edge<5;edge++)
+      if(i===0)indices.push(a,a+edge+1,a+edge);else indices.push(a,a+edge,a+edge+1);}
+    if(i>0&&i<sections&&i%3===0)fractures.push(x,top-2,front+25,x+2,ground+span*.78,front+16,x+2,ground+span*.78,front+16,x-1,ground+span*.42,front+8);
+    boxes.push(new THREE.Box3(new THREE.Vector3(x-7,ground,z-32),new THREE.Vector3(x+7,top+10,front+29)));
   }
   geometry.setAttribute('position',new THREE.Float32BufferAttribute(vertices,3));geometry.setIndex(indices);geometry.computeVertexNormals();
   const mesh=new THREE.Mesh(geometry,material);mesh.castShadow=true;group.add(mesh);

@@ -1,0 +1,69 @@
+{
+  "date": "2026-10-07T12:14:31.017Z",
+  "base": "http://127.0.0.1:4173",
+  "settlingSamples": [
+    {
+      "time": 4573.10000000149,
+      "frames": 3
+    },
+    {
+      "time": 4840,
+      "frames": 3
+    },
+    {
+      "time": 5099,
+      "frames": 3
+    },
+    {
+      "time": 5360.20000000298,
+      "frames": 3
+    },
+    {
+      "time": 5634,
+      "frames": 3
+    },
+    {
+      "time": 5907.79999999702,
+      "frames": 3
+    },
+    {
+      "time": 6278,
+      "frames": 4
+    },
+    {
+      "time": 6598.5,
+      "frames": 4
+    },
+    {
+      "time": 6902.10000000149,
+      "frames": 4
+    },
+    {
+      "time": 7216.10000000149,
+      "frames": 4
+    },
+    {
+      "time": 7497,
+      "frames": 4
+    },
+    {
+      "time": 7784.10000000149,
+      "frames": 4
+    },
+    {
+      "time": 8042.20000000298,
+      "frames": 4
+    },
+    {
+      "time": 8321.60000000149,
+      "frames": 4
+    },
+    {
+      "time": 8596.39999999851,
+      "frames": 4
+    }
+  ],
+  "stableIntervals": 8,
+  "framesDuringOneSecondAfterSettling": 0,
+  "profile": "low"
+}

@@ -64,8 +64,12 @@ Son referencias enlazadas y consultadas, sin imágenes redistribuidas ni textura
 
 ## Materiales e hielo
 
-La textura de detalle de roca se genera localmente con semilla fija 20261007. En Media/Alta el shader PBR combina pendiente, orientación, altura y variación de superficie para roca, nieve y una interpretación del glaciar. En Baja se calculan colores lineales por vértice durante el pipeline y se aplica iluminación difusa Lambert para reducir el coste de los fragmentos; se conserva el mismo relieve. No se desplaza la geometría de las curvas con ruido.
+`prepare-materials.py` genera texturas registradas al mismo recorte con semilla fija 20261008: albedo de 2048², normales en espacio del objeto de 2048² y grano repetible de 512². Los colores combinan pendiente, concavidad, orientación, altura y variación de superficie para interpretar roca estratificada, nieve en corredores y glaciares con morrenas sinuosas. La cumbre reconstruida conserva un casquete nival. El albedo se usa en **todos** los perfiles; Baja usa Lambert con detalle precalculado y Media/Alta PBR con normales. En Media/Alta el grano fino se proyecta de forma triplanar en las caras empinadas.
 
-El serac es una malla 3D independiente de ~180 m de longitud, con un labio sobresaliente y fracturas visuales. Tamaño, posición fina y forma son decisiones de reconstrucción; no proceden de una medición ni describen una expedición actual. La cámara comprueba esta malla además del heightfield.
+El texel de ~5,67 m es densidad del asset visual, sin certificar resolución geográfica. La rugosidad de 1–6 m se utiliza exclusivamente para sombreado; no mueve las posiciones del terreno, las rutas ni las colisiones. El detalle no procede de fotografías satelitales o un levantamiento del hielo. La antigua textura de grano de 256² se conserva como asset del pipeline original y no interviene en el render actual.
+
+El serac es una malla 3D independiente de ~190 m de longitud, con base retraída, frente erosionado, labio sobresaliente y fracturas visuales. Tamaño, posición fina y forma son decisiones de reconstrucción; no proceden de una medición ni describen una expedición actual. La cámara comprueba los volúmenes de esta malla además del heightfield.
+
+`prepare-clouds.py` genera una textura RGBA de 1024×512 con semilla 20261007: densidad 3D, erosión multiescala y sombreado por espesor óptico hacia el sol. Se sitúan bancos distantes detrás del relieve con prueba de profundidad, sin animación permanente, y se pueden ocultar. El cielo es un gradiente de altura con dispersión solar sutil. Nubes y color del cielo son una interpretación atmosférica, sin datos meteorológicos ni fotografía externa.
 
 No se afirma precisión centimétrica, resolución de 22,7 m medida, porcentaje de exactitud, ni un modelo actual de riesgo o meteorología.

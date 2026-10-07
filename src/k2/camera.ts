@@ -3,10 +3,10 @@ import type { Heightfield } from './terrain';
 import type { Vec3, ViewId } from './types';
 export const CAMERA_LIMITS={minDistance:500,maxDistance:14500,clearance:115,minPolar:.12,maxPolar:Math.PI*.49,maxHorizontal:11200};
 export const PRESETS:Record<ViewId,{position:Vec3;target:Vec3}>={
-  general:{position:[6100,4750,9400],target:[220,2000,600]},
+  general:{position:[4900,3800,7500],target:[220,2300,500]},
   abruzzi:{position:[5000,3850,6200],target:[900,2050,900]},
   shoulder:{position:[2500,4500,3450],target:[700,3150,390]},
-  bottleneck:{position:[700,4350,1900],target:[60,3770,235]},
+  bottleneck:{position:[650,4050,1550],target:[60,3770,235]},
   summit:{position:[1600,5000,2100],target:[0,3900,50]},
   north:{position:[-3500,4900,-9000],target:[0,2200,-350]},
   east:{position:[9400,4800,1000],target:[500,2200,0]}

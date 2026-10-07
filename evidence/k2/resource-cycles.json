@@ -16,45 +16,46 @@
       586
     ],
     "frames": 10,
-    "drawCalls": 5,
-    "triangles": 39428,
-    "geometries": 7,
-    "textures": 4,
-    "programs": 8,
+    "drawCalls": 13,
+    "triangles": 55730,
+    "geometries": 10,
+    "textures": 7,
+    "programs": 11,
     "camera": {
       "position": [
-        6096.841580989097,
-        4750.000000000001,
-        9395.132928081559
+        4899.999999999999,
+        3800,
+        7500.000000000001
       ],
       "target": [
         220,
-        2000,
-        600
+        2300,
+        499.9999999999999
       ],
-      "distance": 10929.507316922703,
+      "distance": 8552.917630843875,
       "clearance": null
     },
     "renderCpuMs": {
-      "median": 1.5,
-      "p95": 178.20000000018626,
+      "median": 2.7999999970197678,
+      "p95": 221,
       "samples": 10
     },
     "frameIntervalMs": {
-      "median": 1016.6260000000002,
-      "p95": 1016.6260000000002,
-      "samples": 2
+      "median": 833.3580000000002,
+      "p95": 833.3580000000002,
+      "samples": 1
     },
     "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-    "estimatedTextureMiB": 0.34,
+    "estimatedTextureMiB": 54.67,
     "selected": null,
     "layers": {
       "routes": true,
       "abruzzi": true,
-      "cesen": false,
+      "cesen": true,
       "labels": true,
       "camps": true,
-      "death": false
+      "death": false,
+      "clouds": true
     },
     "transition": false
   },
@@ -74,46 +75,47 @@
       938,
       586
     ],
-    "frames": 56,
-    "drawCalls": 5,
-    "triangles": 39428,
-    "geometries": 7,
-    "textures": 4,
-    "programs": 8,
+    "frames": 62,
+    "drawCalls": 13,
+    "triangles": 55730,
+    "geometries": 10,
+    "textures": 7,
+    "programs": 11,
     "camera": {
       "position": [
-        6096.841580989097,
-        4750.000000000001,
-        9395.132928081559
+        4899.999999999999,
+        3800,
+        7500.000000000001
       ],
       "target": [
         220,
-        2000,
-        600
+        2300,
+        499.9999999999999
       ],
-      "distance": 10929.507316922703,
+      "distance": 8552.917630843875,
       "clearance": null
     },
     "renderCpuMs": {
-      "median": 0.5999999998603016,
-      "p95": 46.199999999953434,
-      "samples": 56
+      "median": 0.7000000029802322,
+      "p95": 12,
+      "samples": 62
     },
     "frameIntervalMs": {
-      "median": 483.2220000000016,
-      "p95": 1983.2940000000017,
-      "samples": 20
+      "median": 583.2540000000008,
+      "p95": 1216.5999999999985,
+      "samples": 16
     },
     "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-    "estimatedTextureMiB": 0.34,
+    "estimatedTextureMiB": 54.67,
     "selected": null,
     "layers": {
       "routes": true,
       "abruzzi": true,
-      "cesen": false,
+      "cesen": true,
       "labels": true,
       "camps": true,
-      "death": false
+      "death": false,
+      "clouds": true
     },
     "transition": false
   },
@@ -135,45 +137,46 @@
         586
       ],
       "frames": 12,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080888,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 1.3999999999068677,
-        "p95": 178.20000000018626,
+        "median": 2.7999999970197678,
+        "p95": 221,
         "samples": 12
       },
       "frameIntervalMs": {
-        "median": 1016.6260000000002,
-        "p95": 1016.6260000000002,
-        "samples": 3
+        "median": 33.331999999998516,
+        "p95": 33.331999999998516,
+        "samples": 2
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -194,11 +197,11 @@
         884
       ],
       "frames": 15,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -214,25 +217,26 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 1.0999999998603016,
-        "p95": 178.20000000018626,
+        "median": 2.7999999970197678,
+        "p95": 221,
         "samples": 15
       },
       "frameIntervalMs": {
-        "median": 433.2540000000008,
-        "p95": 1016.6260000000002,
-        "samples": 4
+        "median": 816.5680000000029,
+        "p95": 816.5680000000029,
+        "samples": 3
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -253,45 +257,46 @@
         586
       ],
       "frames": 17,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.8999999999068677,
-        "p95": 178.20000000018626,
+        "median": 2.100000001490116,
+        "p95": 221,
         "samples": 17
       },
       "frameIntervalMs": {
-        "median": 1016.6260000000002,
-        "p95": 1383.1939999999995,
-        "samples": 5
+        "median": 816.5680000000029,
+        "p95": 816.5680000000029,
+        "samples": 3
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -312,11 +317,11 @@
         884
       ],
       "frames": 19,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -332,25 +337,26 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.8999999999068677,
-        "p95": 178.20000000018626,
+        "median": 1.6999999955296516,
+        "p95": 221,
         "samples": 19
       },
       "frameIntervalMs": {
-        "median": 433.2540000000008,
-        "p95": 1383.1939999999995,
-        "samples": 6
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 4
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -371,45 +377,46 @@
         586
       ],
       "frames": 21,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.8999999999068677,
-        "p95": 178.20000000018626,
+        "median": 1.6999999955296516,
+        "p95": 221,
         "samples": 21
       },
       "frameIntervalMs": {
-        "median": 433.2540000000008,
-        "p95": 1383.1939999999995,
-        "samples": 6
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 4
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -430,11 +437,11 @@
         884
       ],
       "frames": 23,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -450,25 +457,26 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.8000000000465661,
-        "p95": 107.10000000009313,
+        "median": 1,
+        "p95": 83.29999999701977,
         "samples": 23
       },
       "frameIntervalMs": {
-        "median": 433.2800000000025,
-        "p95": 1383.1939999999995,
-        "samples": 7
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 5
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -489,45 +497,46 @@
         586
       ],
       "frames": 25,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.6999999999534339,
-        "p95": 107.10000000009313,
+        "median": 0.9000000059604645,
+        "p95": 83.29999999701977,
         "samples": 25
       },
       "frameIntervalMs": {
-        "median": 433.2800000000025,
-        "p95": 1799.964,
-        "samples": 8
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 5
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -548,11 +557,11 @@
         884
       ],
       "frames": 27,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -568,25 +577,26 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.6999999999534339,
-        "p95": 107.10000000009313,
+        "median": 0.8999999985098839,
+        "p95": 83.29999999701977,
         "samples": 27
       },
       "frameIntervalMs": {
-        "median": 433.29399999999805,
-        "p95": 1799.964,
-        "samples": 9
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 6
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -606,46 +616,47 @@
         938,
         586
       ],
-      "frames": 29,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "frames": 30,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.6000000000931323,
-        "p95": 107.10000000009313,
-        "samples": 29
+        "median": 0.8999999985098839,
+        "p95": 83.29999999701977,
+        "samples": 30
       },
       "frameIntervalMs": {
-        "median": 433.29399999999805,
-        "p95": 1866.630000000001,
-        "samples": 10
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 6
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -665,12 +676,12 @@
         1414,
         884
       ],
-      "frames": 31,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "frames": 32,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -686,25 +697,26 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.6999999999534339,
-        "p95": 107.10000000009313,
-        "samples": 31
+        "median": 0.8999999985098839,
+        "p95": 83.29999999701977,
+        "samples": 32
       },
       "frameIntervalMs": {
-        "median": 433.29399999999805,
-        "p95": 1866.630000000001,
-        "samples": 11
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 7
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -723,224 +735,108 @@
       "resolution": [
         938,
         586
-      ],
-      "frames": 33,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
-      "camera": {
-        "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
-        ],
-        "target": [
-          70,
-          3855.41,
-          175
-        ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
-      },
-      "renderCpuMs": {
-        "median": 0.6999999999534339,
-        "p95": 107.10000000009313,
-        "samples": 33
-      },
-      "frameIntervalMs": {
-        "median": 433.29399999999805,
-        "p95": 1899.9360000000015,
-        "samples": 12
-      },
-      "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
-      "selected": null,
-      "layers": {
-        "routes": false,
-        "abruzzi": true,
-        "cesen": false,
-        "labels": true,
-        "camps": true,
-        "death": false
-      },
-      "transition": false
-    },
-    {
-      "profile": "medium",
-      "geometryProfile": "medium",
-      "loadedLevels": [
-        "low",
-        "medium",
-        "high"
-      ],
-      "terrainBuilds": 3,
-      "dpr": 0.9820927516479826,
-      "width": 1440,
-      "height": 900,
-      "resolution": [
-        1414,
-        884
       ],
       "frames": 35,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          3350.030359812953,
-          2190.935036015443,
-          3420.5270504899154
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
-          2050,
-          1620.19,
-          1740
+          70,
+          3855.41,
+          175
         ],
-        "distance": 2200,
-        "clearance": 1328.4726418861867
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.6000000000931323,
-        "p95": 107.10000000009313,
+        "median": 0.8999999985098839,
+        "p95": 83.29999999701977,
         "samples": 35
       },
       "frameIntervalMs": {
-        "median": 483.2220000000016,
-        "p95": 1899.9360000000015,
-        "samples": 13
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 7
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
-        "routes": true,
+        "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
     {
-      "profile": "low",
-      "geometryProfile": "low",
+      "profile": "medium",
+      "geometryProfile": "medium",
       "loadedLevels": [
         "low",
         "medium",
         "high"
       ],
       "terrainBuilds": 3,
-      "dpr": 0.6514466333088097,
+      "dpr": 0.9820927516479826,
       "width": 1440,
       "height": 900,
       "resolution": [
-        938,
-        586
+        1414,
+        884
       ],
       "frames": 37,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          3350.030359812953,
+          2190.935036015443,
+          3420.5270504899154
         ],
         "target": [
-          70,
-          3855.41,
-          175
+          2050,
+          1620.19,
+          1740
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 2200,
+        "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.5999999998603016,
-        "p95": 107.10000000009313,
+        "median": 0.8999999985098839,
+        "p95": 83.29999999701977,
         "samples": 37
       },
       "frameIntervalMs": {
-        "median": 483.2220000000016,
-        "p95": 1916.5939999999973,
-        "samples": 14
+        "median": 600.0540000000001,
+        "p95": 816.5680000000029,
+        "samples": 8
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
-      "selected": null,
-      "layers": {
-        "routes": false,
-        "abruzzi": true,
-        "cesen": false,
-        "labels": true,
-        "camps": true,
-        "death": false
-      },
-      "transition": false
-    },
-    {
-      "profile": "medium",
-      "geometryProfile": "medium",
-      "loadedLevels": [
-        "low",
-        "medium",
-        "high"
-      ],
-      "terrainBuilds": 3,
-      "dpr": 0.9820927516479826,
-      "width": 1440,
-      "height": 900,
-      "resolution": [
-        1414,
-        884
-      ],
-      "frames": 39,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
-      "camera": {
-        "position": [
-          3350.030359812953,
-          2190.935036015443,
-          3420.5270504899154
-        ],
-        "target": [
-          2050,
-          1620.19,
-          1740
-        ],
-        "distance": 2200,
-        "clearance": 1328.4726418861867
-      },
-      "renderCpuMs": {
-        "median": 0.5,
-        "p95": 107.10000000009313,
-        "samples": 39
-      },
-      "frameIntervalMs": {
-        "median": 483.2220000000016,
-        "p95": 1916.5939999999973,
-        "samples": 15
-      },
-      "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -960,46 +856,47 @@
         938,
         586
       ],
-      "frames": 41,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "frames": 39,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.5,
-        "p95": 107.10000000009313,
-        "samples": 41
+        "median": 0.8999999985098839,
+        "p95": 83.29999999701977,
+        "samples": 39
       },
       "frameIntervalMs": {
-        "median": 483.2220000000016,
-        "p95": 1983.2940000000017,
-        "samples": 16
+        "median": 600.0540000000001,
+        "p95": 816.5680000000029,
+        "samples": 8
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -1019,12 +916,12 @@
         1414,
         884
       ],
-      "frames": 43,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "frames": 41,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -1040,25 +937,26 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.5999999998603016,
-        "p95": 46.199999999953434,
-        "samples": 43
+        "median": 0.8000000044703484,
+        "p95": 83.29999999701977,
+        "samples": 41
       },
       "frameIntervalMs": {
-        "median": 516.7220000000016,
-        "p95": 1983.2940000000017,
-        "samples": 17
+        "median": 616.5800000000017,
+        "p95": 816.5680000000029,
+        "samples": 9
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -1079,45 +977,46 @@
         586
       ],
       "frames": 45,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.6000000000931323,
-        "p95": 46.199999999953434,
+        "median": 0.8000000044703484,
+        "p95": 12.200000002980232,
         "samples": 45
       },
       "frameIntervalMs": {
-        "median": 516.7220000000016,
-        "p95": 1983.2940000000017,
-        "samples": 17
+        "median": 600.0540000000001,
+        "p95": 816.5680000000029,
+        "samples": 10
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -1138,11 +1037,11 @@
         884
       ],
       "frames": 47,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -1158,25 +1057,26 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.6000000000931323,
-        "p95": 46.199999999953434,
+        "median": 0.8000000044703484,
+        "p95": 12.200000002980232,
         "samples": 47
       },
       "frameIntervalMs": {
-        "median": 516.7220000000016,
-        "p95": 1983.2940000000017,
-        "samples": 18
+        "median": 600.0540000000001,
+        "p95": 816.5680000000029,
+        "samples": 11
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -1197,45 +1097,46 @@
         586
       ],
       "frames": 50,
-      "drawCalls": 3,
-      "triangles": 32840,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
-          581.8107787260451,
-          4319.238518220478,
-          1506.5077290294766
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
         ],
         "target": [
           70,
           3855.41,
           175
         ],
-        "distance": 1499.9999999999998,
-        "clearance": 2144.1090052905924
+        "distance": 1500,
+        "clearance": 1967.1937674430574
       },
       "renderCpuMs": {
-        "median": 0.6999999999534339,
-        "p95": 46.199999999953434,
+        "median": 0.7999999970197678,
+        "p95": 12.200000002980232,
         "samples": 50
       },
       "frameIntervalMs": {
-        "median": 516.7220000000016,
-        "p95": 1983.2940000000017,
-        "samples": 19
+        "median": 583.2540000000008,
+        "p95": 816.5680000000029,
+        "samples": 12
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": false,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
       },
       "transition": false
     },
@@ -1256,11 +1157,11 @@
         884
       ],
       "frames": 53,
-      "drawCalls": 2,
-      "triangles": 136904,
-      "geometries": 7,
-      "textures": 4,
-      "programs": 8,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
       "camera": {
         "position": [
           3350.030359812953,
@@ -1276,25 +1177,146 @@
         "clearance": 1328.4726418861867
       },
       "renderCpuMs": {
-        "median": 0.6999999999534339,
-        "p95": 46.199999999953434,
+        "median": 0.7999999970197678,
+        "p95": 12.200000002980232,
         "samples": 53
       },
       "frameIntervalMs": {
-        "median": 516.7220000000016,
-        "p95": 1983.2940000000017,
-        "samples": 19
+        "median": 600.0540000000001,
+        "p95": 833.3580000000002,
+        "samples": 13
       },
       "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
-      "estimatedTextureMiB": 0.34,
+      "estimatedTextureMiB": 54.67,
       "selected": null,
       "layers": {
         "routes": true,
         "abruzzi": true,
-        "cesen": false,
+        "cesen": true,
         "labels": true,
         "camps": true,
-        "death": false
+        "death": false,
+        "clouds": true
+      },
+      "transition": false
+    },
+    {
+      "profile": "low",
+      "geometryProfile": "low",
+      "loadedLevels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "terrainBuilds": 3,
+      "dpr": 0.6514466333088097,
+      "width": 1440,
+      "height": 900,
+      "resolution": [
+        938,
+        586
+      ],
+      "frames": 56,
+      "drawCalls": 6,
+      "triangles": 34236,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
+      "camera": {
+        "position": [
+          672.7630080887999,
+          4141.467020787905,
+          1518.4463654860544
+        ],
+        "target": [
+          70,
+          3855.41,
+          175
+        ],
+        "distance": 1500,
+        "clearance": 1967.1937674430574
+      },
+      "renderCpuMs": {
+        "median": 0.7999999970197678,
+        "p95": 12.200000002980232,
+        "samples": 56
+      },
+      "frameIntervalMs": {
+        "median": 583.2540000000008,
+        "p95": 833.3580000000002,
+        "samples": 14
+      },
+      "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+      "estimatedTextureMiB": 54.67,
+      "selected": null,
+      "layers": {
+        "routes": false,
+        "abruzzi": true,
+        "cesen": true,
+        "labels": true,
+        "camps": true,
+        "death": false,
+        "clouds": true
+      },
+      "transition": false
+    },
+    {
+      "profile": "medium",
+      "geometryProfile": "medium",
+      "loadedLevels": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "terrainBuilds": 3,
+      "dpr": 0.9820927516479826,
+      "width": 1440,
+      "height": 900,
+      "resolution": [
+        1414,
+        884
+      ],
+      "frames": 59,
+      "drawCalls": 8,
+      "triangles": 152272,
+      "geometries": 10,
+      "textures": 7,
+      "programs": 11,
+      "camera": {
+        "position": [
+          3350.030359812953,
+          2190.935036015443,
+          3420.5270504899154
+        ],
+        "target": [
+          2050,
+          1620.19,
+          1740
+        ],
+        "distance": 2200,
+        "clearance": 1328.4726418861867
+      },
+      "renderCpuMs": {
+        "median": 0.7000000029802322,
+        "p95": 12.200000002980232,
+        "samples": 59
+      },
+      "frameIntervalMs": {
+        "median": 600.0540000000001,
+        "p95": 1216.5999999999985,
+        "samples": 15
+      },
+      "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+      "estimatedTextureMiB": 54.67,
+      "selected": null,
+      "layers": {
+        "routes": true,
+        "abruzzi": true,
+        "cesen": true,
+        "labels": true,
+        "camps": true,
+        "death": false,
+        "clouds": true
       },
       "transition": false
     }

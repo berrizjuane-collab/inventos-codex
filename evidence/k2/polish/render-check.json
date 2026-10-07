@@ -1,0 +1,456 @@
+{
+  "date": "2026-10-07T12:11:46.783Z",
+  "base": "http://127.0.0.1:4173",
+  "errors": [],
+  "assets": [
+    "terrain.json",
+    "heights.bin",
+    "terrain-low.glb",
+    "terrain-albedo.jpg",
+    "terrain-normal.jpg",
+    "rock-grain.jpg",
+    "cloud-bank.png",
+    "terrain-medium.glb",
+    "terrain-high.glb"
+  ],
+  "states": [
+    {
+      "name": "general",
+      "info": {
+        "profile": "low",
+        "geometryProfile": "low",
+        "loadedLevels": [
+          "low"
+        ],
+        "terrainBuilds": 1,
+        "dpr": 0.6514466333088097,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          938,
+          586
+        ],
+        "frames": 3,
+        "drawCalls": 13,
+        "triangles": 55730,
+        "geometries": 8,
+        "textures": 4,
+        "programs": 7,
+        "camera": {
+          "position": [
+            4899.999999999999,
+            3800,
+            7500.000000000001
+          ],
+          "target": [
+            220,
+            2300,
+            499.9999999999999
+          ],
+          "distance": 8552.917630843875,
+          "clearance": null
+        },
+        "renderCpuMs": {
+          "median": 4,
+          "p95": 4,
+          "samples": 3
+        },
+        "frameIntervalMs": {
+          "median": null,
+          "p95": null,
+          "samples": 0
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 46.67,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": false,
+          "clouds": true
+        },
+        "transition": false
+      }
+    },
+    {
+      "name": "general-medium",
+      "info": {
+        "profile": "medium",
+        "geometryProfile": "medium",
+        "loadedLevels": [
+          "low",
+          "medium"
+        ],
+        "terrainBuilds": 2,
+        "dpr": 0.9820927516479826,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          1414,
+          884
+        ],
+        "frames": 5,
+        "drawCalls": 13,
+        "triangles": 154034,
+        "geometries": 9,
+        "textures": 5,
+        "programs": 8,
+        "camera": {
+          "position": [
+            4899.999999999999,
+            3800,
+            7500.000000000001
+          ],
+          "target": [
+            220,
+            2300,
+            499.9999999999999
+          ],
+          "distance": 8552.917630843875,
+          "clearance": null
+        },
+        "renderCpuMs": {
+          "median": 4,
+          "p95": 110.79999999701977,
+          "samples": 5
+        },
+        "frameIntervalMs": {
+          "median": null,
+          "p95": null,
+          "samples": 0
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 46.67,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": false,
+          "clouds": true
+        },
+        "transition": false
+      }
+    },
+    {
+      "name": "bottleneck",
+      "info": {
+        "profile": "high",
+        "geometryProfile": "high",
+        "loadedLevels": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "terrainBuilds": 3,
+        "dpr": 1,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          1440,
+          900
+        ],
+        "frames": 9,
+        "drawCalls": 14,
+        "triangles": 1071784,
+        "geometries": 10,
+        "textures": 7,
+        "programs": 11,
+        "camera": {
+          "position": [
+            650,
+            4049.9999999999995,
+            1550
+          ],
+          "target": [
+            59.999999999999986,
+            3769.9999999999995,
+            234.99999999999997
+          ],
+          "distance": 1468.238740804778,
+          "clearance": 1905.8620689655163
+        },
+        "renderCpuMs": {
+          "median": 5.600000001490116,
+          "p95": 110.79999999701977,
+          "samples": 9
+        },
+        "frameIntervalMs": {
+          "median": null,
+          "p95": null,
+          "samples": 0
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 54.67,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": false,
+          "clouds": true
+        },
+        "transition": false
+      }
+    },
+    {
+      "name": "evening",
+      "info": {
+        "profile": "high",
+        "geometryProfile": "high",
+        "loadedLevels": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "terrainBuilds": 3,
+        "dpr": 1,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          1440,
+          900
+        ],
+        "frames": 10,
+        "drawCalls": 14,
+        "triangles": 1071784,
+        "geometries": 10,
+        "textures": 7,
+        "programs": 11,
+        "camera": {
+          "position": [
+            650,
+            4049.9999999999995,
+            1550
+          ],
+          "target": [
+            59.999999999999986,
+            3769.9999999999995,
+            234.99999999999997
+          ],
+          "distance": 1468.238740804778,
+          "clearance": 1905.8620689655163
+        },
+        "renderCpuMs": {
+          "median": 5,
+          "p95": 110.79999999701977,
+          "samples": 10
+        },
+        "frameIntervalMs": {
+          "median": null,
+          "p95": null,
+          "samples": 0
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 54.67,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": false,
+          "clouds": true
+        },
+        "transition": false
+      }
+    },
+    {
+      "name": "north",
+      "info": {
+        "profile": "medium",
+        "geometryProfile": "medium",
+        "loadedLevels": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "terrainBuilds": 3,
+        "dpr": 0.9820927516479826,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          1414,
+          884
+        ],
+        "frames": 14,
+        "drawCalls": 13,
+        "triangles": 154034,
+        "geometries": 10,
+        "textures": 7,
+        "programs": 11,
+        "camera": {
+          "position": [
+            -3499.9999999999977,
+            4900,
+            -9000
+          ],
+          "target": [
+            0,
+            2200,
+            -350
+          ],
+          "distance": 9714.036236292306,
+          "clearance": null
+        },
+        "renderCpuMs": {
+          "median": 3,
+          "p95": 110.79999999701977,
+          "samples": 14
+        },
+        "frameIntervalMs": {
+          "median": 16.666000000001077,
+          "p95": 16.666000000001077,
+          "samples": 1
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 54.67,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": false,
+          "clouds": true
+        },
+        "transition": false
+      }
+    },
+    {
+      "name": "east",
+      "info": {
+        "profile": "medium",
+        "geometryProfile": "medium",
+        "loadedLevels": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "terrainBuilds": 3,
+        "dpr": 0.9820927516479826,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          1414,
+          884
+        ],
+        "frames": 16,
+        "drawCalls": 14,
+        "triangles": 154036,
+        "geometries": 10,
+        "textures": 7,
+        "programs": 11,
+        "camera": {
+          "position": [
+            9400,
+            4800,
+            1000.0000000000002
+          ],
+          "target": [
+            500.0000000000001,
+            2200,
+            0
+          ],
+          "distance": 9325.77074562741,
+          "clearance": null
+        },
+        "renderCpuMs": {
+          "median": 2.899999998509884,
+          "p95": 110.79999999701977,
+          "samples": 16
+        },
+        "frameIntervalMs": {
+          "median": 16.666000000001077,
+          "p95": 16.666000000001077,
+          "samples": 1
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 54.67,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": false,
+          "clouds": true
+        },
+        "transition": false
+      }
+    },
+    {
+      "name": "mobile",
+      "info": {
+        "profile": "low",
+        "geometryProfile": "low",
+        "loadedLevels": [
+          "low",
+          "medium",
+          "high"
+        ],
+        "terrainBuilds": 3,
+        "dpr": 1,
+        "width": 390,
+        "height": 844,
+        "resolution": [
+          390,
+          844
+        ],
+        "frames": 21,
+        "drawCalls": 11,
+        "triangles": 55726,
+        "geometries": 10,
+        "textures": 7,
+        "programs": 11,
+        "camera": {
+          "position": [
+            4899.999999999999,
+            3800,
+            7500.000000000001
+          ],
+          "target": [
+            220,
+            2300,
+            499.9999999999999
+          ],
+          "distance": 8552.917630843875,
+          "clearance": null
+        },
+        "renderCpuMs": {
+          "median": 1.8999999985098839,
+          "p95": 110.79999999701977,
+          "samples": 21
+        },
+        "frameIntervalMs": {
+          "median": 16.666000000001077,
+          "p95": 16.666000000001077,
+          "samples": 2
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 54.67,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": false,
+          "clouds": true
+        },
+        "transition": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+$ playwright test -c playwright.k2.config.ts --grep '20 interaction|texture failure'
+
+Running 2 tests using 1 worker
+
+(node:9404) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 tests/k2/atlas.spec.ts:64:1 › 20 interaction cycles and quality changes retain stable resource counts (1.1m)
+  ✓  2 tests/k2/atlas.spec.ts:109:1 › texture failure can retry and cloud toggle changes the rendered scene without new terrain loads (11.9s)
+
+  2 passed (1.3m)

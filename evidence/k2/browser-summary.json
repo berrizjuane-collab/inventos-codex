@@ -2,41 +2,46 @@
   {
     "name": "initial load, routes, layers and HTML point details preserve terrain and selection",
     "status": "passed",
-    "evidence": "browser-final-rerun-results.json"
+    "evidence": "polish/browser-first-results.json"
   },
   {
     "name": "desktop and mobile layout, modal keyboard, touch-sized controls and screenshots",
     "status": "passed",
-    "evidence": "browser-after-material-results.json"
+    "evidence": "polish/browser-first-results.json"
   },
   {
     "name": "presets, opposite faces, zoom and surface clearance; reduced motion",
     "status": "passed",
-    "evidence": "browser-after-material-results.json"
+    "evidence": "polish/browser-first-results.json"
   },
   {
     "name": "20 interaction cycles and quality changes retain stable resource counts",
     "status": "passed",
-    "evidence": "browser-after-material-results.json"
+    "evidence": "polish/browser-rerun-results.json"
   },
   {
     "name": "WebGL fallback, actual asset error, retry and context restoration",
     "status": "passed",
-    "evidence": "browser-after-material-results.json"
+    "evidence": "polish/browser-first-results.json"
   },
   {
     "name": "accessible HTML controls and dialogs",
     "status": "passed",
-    "evidence": "browser-after-material-results.json"
+    "evidence": "polish/browser-first-results.json"
   },
   {
     "name": "existing vector laboratory remains available",
     "status": "passed",
-    "evidence": "browser-after-material-results.json"
+    "evidence": "polish/browser-first-results.json"
+  },
+  {
+    "name": "texture failure can retry and cloud toggle changes the rendered scene without new terrain loads",
+    "status": "passed",
+    "evidence": "polish/browser-rerun-results.json"
   },
   {
     "name": "touch orbit and pinch, and manual input interrupts a camera transition",
     "status": "passed",
-    "evidence": "browser-after-material-results.json"
+    "evidence": "polish/browser-first-results.json"
   }
 ]

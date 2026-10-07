@@ -1,0 +1,16 @@
+{
+  "asset": "cloud-bank.png",
+  "dimensions": [
+    1024,
+    512
+  ],
+  "seed": 20261007,
+  "classification": "authored atmospheric illustration",
+  "provenance": "Procedural volume authored for this atlas; no external imagery.",
+  "method": "Seeded 3D density, multiscale erosion, sunlight optical depth, alpha raymarch.",
+  "colorSpace": "sRGB",
+  "alpha": "straight",
+  "sunDirectionInImage": "upper left",
+  "recommendedUse": "Distant camera-facing billboards; depth test on, depth write off; opacity 0.35\u20130.7.",
+  "notMeteorologicalData": true
+}

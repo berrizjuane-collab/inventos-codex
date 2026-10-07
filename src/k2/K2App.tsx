@@ -4,7 +4,7 @@ import {AtlasScene,type AtlasHandle} from './AtlasScene';
 import {VIEWS,formatAltitude,type AtlasData,type Layers,type Poi,type Quality,type ViewId} from './types';
 import './atlas.css';
 const DATA=atlas as AtlasData;
-const INITIAL:Layers={routes:true,abruzzi:true,cesen:false,labels:true,camps:true,death:false};
+const INITIAL:Layers={routes:true,abruzzi:true,cesen:true,labels:true,camps:true,death:false,clouds:true};
 function Icon({name}:{name:'mountain'|'layers'|'points'|'help'|'reset'|'close'|'arrow'|'sun'|'source'}) {
   const paths={
     mountain:'M2 19 9 5l4 7 3-5 6 12H2Zm4-8 3 3 3-3',
@@ -94,7 +94,10 @@ export default function K2App(){
       <div className="panel-section-title"><span>CAPAS DEL ATLAS</span><span>02</span></div>
       <Toggle label="Etiquetas" value={layers.labels} onChange={()=>toggle('labels')}/>
       <Toggle label="Campamentos" value={layers.camps} onChange={()=>toggle('camps')}/>
-      <Toggle label="Zona de la muerte" note="Umbral de 8 000 m" value={layers.death} onChange={()=>toggle('death')}/>
+      <div className="atmosphere-controls">
+        <Toggle label="Zona de la muerte" note="Umbral de 8 000 m" value={layers.death} onChange={()=>toggle('death')}/>
+        <Toggle label="Nubes" value={layers.clouds} onChange={()=>toggle('clouds')}/>
+      </div>
       <div className="render-options">
         <label htmlFor="quality">Calidad</label><select id="quality" value={quality} onChange={e=>setQuality(e.target.value as Quality)}>
           <option value="auto">Auto</option><option value="high">Alta</option><option value="medium">Media</option><option value="low">Baja</option>

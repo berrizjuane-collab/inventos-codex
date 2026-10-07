@@ -18,7 +18,7 @@ export interface TerrainMeta {
   summit: Vec3; contourIntervalMeters: number; minHeight: number; maxHeight: number;
   levels: Record<string, {triangles:number; vertices:number; bytes:number}>;
 }
-export interface Layers { routes: boolean; abruzzi: boolean; cesen: boolean; labels: boolean; camps: boolean; death: boolean }
+export interface Layers { routes: boolean; abruzzi: boolean; cesen: boolean; labels: boolean; camps: boolean; death: boolean; clouds: boolean }
 export interface SceneSettings { layers: Layers; selected: string | null; quality: Quality; light: 'day' | 'evening' }
 export const VIEWS: {id:ViewId; label:string; short:string}[] = [
   {id:'general',label:'Vista general',short:'General'}, {id:'abruzzi',label:'Espolón de los Abruzzos',short:'Abruzzi'},

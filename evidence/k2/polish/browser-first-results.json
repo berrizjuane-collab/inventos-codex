@@ -1,0 +1,459 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/inventos-codex/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.k2.config.ts"
+    ],
+    "configFile": "/workspace/inventos-codex/playwright.k2.config.ts",
+    "rootDir": "/workspace/inventos-codex/tests/k2",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/inventos-codex/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/inventos-codex/tests/k2",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/k2/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "pnpm dev --port 5173",
+      "url": "http://127.0.0.1:5173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "atlas.spec.ts",
+      "file": "atlas.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "initial load, routes, layers and HTML point details preserve terrain and selection",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 16949,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:56:48.783Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-31ba6b7c61fd161277f0",
+          "file": "atlas.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "desktop and mobile layout, modal keyboard, touch-sized controls and screenshots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 21578,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:57:06.018Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-7b477ea2815a0bc264df",
+          "file": "atlas.spec.ts",
+          "line": 26,
+          "column": 1
+        },
+        {
+          "title": "presets, opposite faces, zoom and surface clearance; reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 36807,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:57:27.609Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-28e7c351b0a3f0cbc36f",
+          "file": "atlas.spec.ts",
+          "line": 48,
+          "column": 1
+        },
+        {
+          "title": "20 interaction cycles and quality changes retain stable resource counts",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "timedOut",
+                  "duration": 65185,
+                  "error": {
+                    "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
+                    "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                  },
+                  "errors": [
+                    {
+                      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+                    },
+                    {
+                      "location": {
+                        "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                        "column": 120,
+                        "line": 77
+                      },
+                      "message": "Error: locator.click: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for getByRole('button', { name: 'Restablecer vista general' })\u001b[22m\n\u001b[2m    - locator resolved to <button aria-label=\"Restablecer vista general\">…</button>\u001b[22m\n\n\n  75 |     snapshots.push(await info(page));\n  76 |   }\n> 77 |   await page.locator('#quality').selectOption('low');await page.getByRole('button',{name:'Restablecer vista general'}).click();await page.waitForTimeout(500);\n     |                                                                                                                        ^\n  78 |   const after=await info(page);expect(after.terrainBuilds).toBe(3);expect(after.geometries).toBe(before.geometries);\n  79 |   expect(after.textures).toBe(before.textures);expect(after.programs).toBeLessThanOrEqual(before.programs+1);\n  80 |   await import('node:fs/promises').then(fs=>fs.writeFile('evidence/k2/resource-cycles.json',JSON.stringify({before,after,snapshots},null,2)));\n    at /workspace/inventos-codex/tests/k2/atlas.spec.ts:77:120"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:58:04.460Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/inventos-codex/test-results/atlas-20-interaction-cycle-f5a34-tain-stable-resource-counts/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/inventos-codex/test-results/atlas-20-interaction-cycle-f5a34-tain-stable-resource-counts/trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-a725cbccd31f4118647b",
+          "file": "atlas.spec.ts",
+          "line": 64,
+          "column": 1
+        },
+        {
+          "title": "WebGL fallback, actual asset error, retry and context restoration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 14486,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:59:13.307Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-c886d8dec68ee07f1310",
+          "file": "atlas.spec.ts",
+          "line": 82,
+          "column": 1
+        },
+        {
+          "title": "accessible HTML controls and dialogs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 15343,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:59:28.342Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-311b8e4ea39fd5f01381",
+          "file": "atlas.spec.ts",
+          "line": 95,
+          "column": 1
+        },
+        {
+          "title": "existing vector laboratory remains available",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 9237,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:59:43.726Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-fd99b785760a3f3845ec",
+          "file": "atlas.spec.ts",
+          "line": 103,
+          "column": 1
+        },
+        {
+          "title": "texture failure can retry and cloud toggle changes the rendered scene without new terrain loads",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11638,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m13\u001b[39m\nReceived:   \u001b[31m13\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m13\u001b[39m\nReceived:   \u001b[31m13\u001b[39m\n    at /workspace/inventos-codex/tests/k2/atlas.spec.ts:119:56",
+                    "location": {
+                      "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                      "column": 56,
+                      "line": 119
+                    },
+                    "snippet": "  117 |   await page.getByRole('switch',{name:'Nubes',exact:true}).click();\n  118 |   await page.waitForFunction(before=>(window as any).__K2.info().frames>before,withClouds.frames);\n> 119 |   const clear=await info(page);expect(clear.drawCalls).toBeLessThan(withClouds.drawCalls);\n      |                                                        ^\n  120 |   expect(clear.terrainBuilds).toBe(withClouds.terrainBuilds);\n  121 |   await page.getByRole('switch',{name:'Nubes',exact:true}).click();\n  122 |   await page.waitForFunction(before=>(window as any).__K2.info().frames>before,clear.frames);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                        "column": 56,
+                        "line": 119
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m13\u001b[39m\nReceived:   \u001b[31m13\u001b[39m\n\n  117 |   await page.getByRole('switch',{name:'Nubes',exact:true}).click();\n  118 |   await page.waitForFunction(before=>(window as any).__K2.info().frames>before,withClouds.frames);\n> 119 |   const clear=await info(page);expect(clear.drawCalls).toBeLessThan(withClouds.drawCalls);\n      |                                                        ^\n  120 |   expect(clear.terrainBuilds).toBe(withClouds.terrainBuilds);\n  121 |   await page.getByRole('switch',{name:'Nubes',exact:true}).click();\n  122 |   await page.waitForFunction(before=>(window as any).__K2.info().frames>before,clear.frames);\n    at /workspace/inventos-codex/tests/k2/atlas.spec.ts:119:56"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T11:59:53.184Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/inventos-codex/test-results/atlas-texture-failure-can--5671c-e-without-new-terrain-loads/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/inventos-codex/test-results/atlas-texture-failure-can--5671c-e-without-new-terrain-loads/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                    "column": 56,
+                    "line": 119
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-75366c49c7306963d698",
+          "file": "atlas.spec.ts",
+          "line": 108,
+          "column": 1
+        },
+        {
+          "title": "touch orbit and pinch, and manual input interrupts a camera transition",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 2,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 24631,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T12:00:06.070Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-8f290964f4bda6c15bb1",
+          "file": "atlas.spec.ts",
+          "line": 126,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-07T11:56:47.771Z",
+    "duration": 223897.9,
+    "expected": 7,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

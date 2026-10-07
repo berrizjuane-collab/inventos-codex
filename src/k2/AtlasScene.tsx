@@ -8,7 +8,8 @@ import {LineMaterial} from 'three/examples/jsm/lines/LineMaterial.js';
 import {Heightfield} from './terrain';
 import {constrainCamera,CAMERA_LIMITS,PRESETS} from './camera';
 import {BUDGETS,AutoQuality,effectiveDpr,requestedProfile} from './quality';
-import {mountainMaterial,lowMountainMaterial,createSerac} from './materials';
+import {mountainMaterial,createSerac} from './materials';
+import {createAtmosphere} from './atmosphere';
 import type {AtlasData,Poi,Profile,SceneSettings,TerrainMeta,ViewId} from './types';
 import {formatAltitude} from './types';
 export interface AtlasHandle { view:(id:ViewId)=>void; focus:(point:Poi)=>void; zoom:(factor:number)=>void; info:()=>unknown; }
@@ -44,7 +45,7 @@ export const AtlasScene=forwardRef<AtlasHandle,Props>(function AtlasScene({data,
       }catch{fail('No se pudo iniciar WebGL2. La lista de puntos y las fuentes siguen disponibles.');return;}
       renderer.domElement.className='atlas-canvas';renderer.domElement.setAttribute('aria-hidden','true');
       host.prepend(renderer.domElement);renderer.outputColorSpace=THREE.SRGBColorSpace;
-      renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=1.03;
+      renderer.toneMapping=THREE.ACESFilmicToneMapping;renderer.toneMappingExposure=.92;
       renderer.shadowMap.type=THREE.PCFShadowMap;renderer.shadowMap.autoUpdate=false;
       const rr=renderer;
       try{
@@ -55,27 +56,38 @@ export const AtlasScene=forwardRef<AtlasHandle,Props>(function AtlasScene({data,
         const field=new Heightfield(meta,new Uint16Array(raw));
         setStatus('Preparando la geometría…');
         const loader=new GLTFLoader(),first=await loader.loadAsync(asset('terrain-low.glb'));
-        if(cancelled){disposeTree(first.scene);return;}
+        disposeTree(first.scene);
+        if(cancelled){geometries.forEach(g=>g.dispose());materials.forEach(m=>m.dispose());return;}
         scene=new THREE.Scene();const ss=scene;
-        ss.background=new THREE.Color(0x132431);ss.fog=new THREE.FogExp2(0x132431,.000029);
-        const camera=new THREE.PerspectiveCamera(39,1,10,40000);
+        ss.background=new THREE.Color(0x8ca9ba);ss.fog=new THREE.FogExp2(0xacc0cb,.000022);
+        const camera=new THREE.PerspectiveCamera(39,1,10,60000);
         controls=new OrbitControls(camera,rr.domElement);const cc=controls;
         cc.enableDamping=true;cc.dampingFactor=.085;cc.rotateSpeed=.6;cc.zoomSpeed=.68;cc.panSpeed=.5;
         cc.minDistance=CAMERA_LIMITS.minDistance;cc.maxDistance=CAMERA_LIMITS.maxDistance;
         cc.minPolarAngle=CAMERA_LIMITS.minPolar;cc.maxPolarAngle=CAMERA_LIMITS.maxPolar;
         camera.position.set(...PRESETS.general.position);cc.target.set(...PRESETS.general.target);
-        const hemisphere=new THREE.HemisphereLight(0xaecbdd,0x222b34,.75);ss.add(hemisphere);
-        const sun=new THREE.DirectionalLight(0xffe8ce,2.7);sun.position.set(-6500,10000,4700);
+        const hemisphere=new THREE.HemisphereLight(0xb8d6ed,0x39332d,1.1);ss.add(hemisphere);
+        const sun=new THREE.DirectionalLight(0xffefdb,2.0);sun.position.set(-8500,8500,4500);
         sun.target.position.set(0,1800,0);ss.add(sun,sun.target);
         sun.shadow.camera.left=-4200;sun.shadow.camera.right=4200;sun.shadow.camera.top=4200;sun.shadow.camera.bottom=-4200;
         sun.shadow.camera.near=100;sun.shadow.camera.far=22000;sun.shadow.normalBias=7;sun.shadow.bias=-.00015;
         const death={value:settingsRef.current.layers.death?1:0};
-        const detail=await new THREE.TextureLoader().loadAsync(asset('rock-detail.png'));
-        textures.add(detail);if(cancelled){disposeTree(first.scene);return;}
-        const material=mountainMaterial(detail,death),lowMaterial=lowMountainMaterial(death);materials.add(material);materials.add(lowMaterial);
+        setStatus('Cargando roca, nieve y atmósfera…');
+        const textureLoader=new THREE.TextureLoader();
+        const [albedo,normal,grain,cloudTexture]=await Promise.all(['terrain-albedo.jpg','terrain-normal.jpg','rock-grain.jpg','cloud-bank.png'].map(async name=>{
+          const texture=await textureLoader.loadAsync(asset(name));if(cancelled)texture.dispose();else textures.add(texture);return texture;
+        }));
+        if(cancelled)return;
+        const material=mountainMaterial(albedo,normal,grain,death),lowMaterial=mountainMaterial(albedo,normal,grain,death,true);materials.add(material);materials.add(lowMaterial);
+        const atmosphere=createAtmosphere(cloudTexture);ss.add(atmosphere.sky,atmosphere.clouds);disposeTree(atmosphere.sky);disposeTree(atmosphere.clouds);
         const terrain:Partial<Record<Profile,THREE.Object3D>>={low:first.scene};
         const prepare=(obj:THREE.Object3D,profile:Profile)=>{
-          disposeTree(obj);obj.traverse(o=>{if(o instanceof THREE.Mesh){o.material=profile==='low'?lowMaterial:material;o.receiveShadow=true;o.castShadow=true;}});
+          disposeTree(obj);obj.traverse(o=>{if(o instanceof THREE.Mesh){
+            o.material=profile==='low'?lowMaterial:material;o.receiveShadow=true;o.castShadow=true;
+            const p=o.geometry.getAttribute('position'),uv=new Float32Array(p.count*2);
+            for(let i=0;i<p.count;i++){uv[i*2]=(p.getX(i)-meta.bounds[0])/(meta.bounds[2]-meta.bounds[0]);uv[i*2+1]=1-(p.getZ(i)-meta.bounds[1])/(meta.bounds[3]-meta.bounds[1]);}
+            o.geometry.setAttribute('uv',new THREE.BufferAttribute(uv,2));
+          }});
           ss.add(obj);obj.visible=false;
         };
         prepare(first.scene,'low');first.scene.visible=true;
@@ -86,13 +98,18 @@ export const AtlasScene=forwardRef<AtlasHandle,Props>(function AtlasScene({data,
         let renderTimes:number[]=[],intervals:number[]=[];
         let transition:null|{start:number;duration:number;fromTarget:THREE.Vector3;toTarget:THREE.Vector3;from:THREE.Spherical;to:THREE.Spherical}=null;
         let visible=!document.hidden,contextLost=false,hiddenAt=0;
-        const ice=createSerac(field,data.points.find(p=>p.id==='serac')!.position);ss.add(ice.group);disposeTree(ice.group);
+        const ice=createSerac(field,data.points.find(p=>p.id==='serac')!.position,grain);ss.add(ice.group);disposeTree(ice.group);
         const lines=data.segments.map(segment=>{
           const geometry=new LineGeometry();geometries.add(geometry);
-          const lm=new LineMaterial({color:segment.shared?0xe7eff2:segment.id==='cesen'?0xe8b86d:0x78d1e2,linewidth:3,worldUnits:false,
+          const lm=new LineMaterial({color:segment.shared?0xf7f2d6:segment.id==='cesen'?0xffbc57:0x53d8fa,linewidth:3.4,worldUnits:false,
             dashed:segment.id==='cesen',dashSize:75,gapSize:45,depthTest:true,depthWrite:false,transparent:true,opacity:.94});
+          lm.toneMapped=false;
           lm.resolution.set(width,height);materials.add(lm);
-          const line=new Line2(geometry,lm);line.userData.segment=segment;line.renderOrder=2;ss.add(line);return line;
+          const outlineMaterial=new LineMaterial({color:0x172a36,linewidth:6.5,worldUnits:false,
+            dashed:segment.id==='cesen',dashSize:75,gapSize:45,depthTest:true,depthWrite:false,transparent:true,opacity:.84});
+          outlineMaterial.toneMapped=false;outlineMaterial.resolution.set(width,height);materials.add(outlineMaterial);
+          const outline=new Line2(geometry,outlineMaterial);outline.renderOrder=1;ss.add(outline);
+          const line=new Line2(geometry,lm);line.userData.segment=segment;line.userData.outline=outline;line.renderOrder=2;ss.add(line);return line;
         });
         const updateLines=()=>{
           for(const line of lines){
@@ -107,7 +124,7 @@ export const AtlasScene=forwardRef<AtlasHandle,Props>(function AtlasScene({data,
           rr.setPixelRatio(effectiveDpr(desired,width,height,devicePixelRatio));rr.setSize(width,height);
           camera.aspect=width/height;camera.fov=width<650?49:39;
           camera.setViewOffset(width,height,width<850?0:-width*.095,0,width,height);camera.updateProjectionMatrix();
-          lines.forEach(l=>(l.material as LineMaterial).resolution.set(width,height));request();
+          lines.forEach(l=>{(l.material as LineMaterial).resolution.set(width,height);(l.userData.outline.material as LineMaterial).resolution.set(width,height);});request();
         };
         const lodProfile=()=>{
           const quality=requestedProfile(currentSettings.quality,auto),distance=camera.position.distanceTo(cc.target);
@@ -135,10 +152,11 @@ export const AtlasScene=forwardRef<AtlasHandle,Props>(function AtlasScene({data,
           currentSettings=s;death.value=s.layers.death?1:0;
           for(const line of lines){
             const segment=line.userData.segment as AtlasData['segments'][number];
-            line.visible=s.layers.routes&&segment.routes.some(id=>s.layers[id]);(line.material as LineMaterial).opacity=.94;
+            line.visible=s.layers.routes&&segment.routes.some(id=>s.layers[id]);line.userData.outline.visible=line.visible;(line.material as LineMaterial).opacity=.97;
           }
-          if(s.light==='evening'){sun.position.set(-7500,5600,3600);sun.color.set(0xf6d2ac);sun.intensity=2.4;hemisphere.intensity=.55;}
-          else{sun.position.set(-6500,10000,4700);sun.color.set(0xffe8ce);sun.intensity=2.7;hemisphere.intensity=.75;}
+          if(s.light==='evening'){sun.position.set(-9000,4900,3600);sun.color.set(0xf6c798);sun.intensity=1.7;hemisphere.intensity=.88;(ss.fog as THREE.FogExp2).color.set(0xb9afb0);}
+          else{sun.position.set(-8500,8500,4500);sun.color.set(0xffefdb);sun.intensity=2;hemisphere.intensity=1.1;(ss.fog as THREE.FogExp2).color.set(0xacc0cb);}
+          atmosphere.update(camera,s.light==='evening',s.layers.clouds);
           rr.shadowMap.needsUpdate=true;chooseGeometry(lodProfile());lastLabels=0;request();
         };
         const projectLabels=(now:number)=>{
@@ -182,6 +200,7 @@ export const AtlasScene=forwardRef<AtlasHandle,Props>(function AtlasScene({data,
           }
           const changed=cc.update();constrainCamera(camera.position,cc.target,field,previous,ice.boxes);
           camera.lookAt(cc.target);previous.copy(camera.position);
+          atmosphere.update(camera,currentSettings.light==='evening',currentSettings.layers.clouds);
           const begin=performance.now();rr.render(ss,camera);const ms=performance.now()-begin;
           rendered++;renderTimes.push(ms);if(renderTimes.length>12000)renderTimes.shift();
           if(lastFrame&&now-lastFrame<2000&&(changed||transition)){
@@ -218,7 +237,7 @@ export const AtlasScene=forwardRef<AtlasHandle,Props>(function AtlasScene({data,
           renderCpuMs:{median:quantile(renderTimes,.5),p95:quantile(renderTimes,.95),samples:renderTimes.length},
           frameIntervalMs:{median:quantile(intervals,.5),p95:quantile(intervals,.95),samples:intervals.length},
           measurementNote:'Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.',
-          estimatedTextureMiB:rr.shadowMap.enabled?8.34:.34,selected:currentSettings.selected,layers:{...currentSettings.layers},transition:!!transition
+          estimatedTextureMiB:sun.shadow.map?54.67:46.67,selected:currentSettings.selected,layers:{...currentSettings.layers},transition:!!transition
         });
         runtime.current={apply,view,zoom:factor=>{transition=null;camera.position.sub(cc.target).multiplyScalar(factor).add(cc.target);
           constrainCamera(camera.position,cc.target,field,previous,ice.boxes);apply(currentSettings);request();},info};

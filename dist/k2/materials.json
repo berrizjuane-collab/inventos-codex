@@ -1,0 +1,17 @@
+{
+  "classification": "interpretación visual reconstruida",
+  "seed": 20261008,
+  "size": [
+    2048,
+    2048
+  ],
+  "texelMetersForRenderingOnly": 5.666829506595017,
+  "geometricDisplacement": false,
+  "normalSpace": "object-space: east, up, south",
+  "snowCoverageFraction": 0.5740656852722168,
+  "assets": {
+    "terrain-albedo.jpg": 1308940,
+    "terrain-normal.jpg": 1425247,
+    "rock-grain.jpg": 134475
+  }
+}

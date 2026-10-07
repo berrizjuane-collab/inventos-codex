@@ -1,0 +1,20 @@
+{
+  "identical": true,
+  "sha256": {
+    "terrain-albedo.jpg": "492581b564b17386b83811b57c9f60b44dd4a18f1c7e66bb5dc7b9d29b148a32",
+    "terrain-normal.jpg": "68998400f11b5a02eb28fbb345a9398ff53ecb0c3b7fce0ad353bf6b76281d6e",
+    "rock-grain.jpg": "3d6f783fd1ff27e898ed60b006a9ed2b07fa67bcf940bf2e144820c90c0a4137",
+    "materials.json": "b908743376703571e45f12076f84193508c9c312a7238ee457875e5767846057",
+    "cloud-bank.png": "4c47da51e20312c285b8a68a94ea68a5eddda50682bd53585cd09ca85e2f63ec",
+    "cloud-bank.json": "9eeb5acd0de0552f317f13b326c806ec4197bf2993b046f8b99b64ba2aac7313"
+  },
+  "geographicAssetsUnchanged": {
+    "rock-detail.png": true,
+    "terrain-medium.glb": true,
+    "atlas.json": true,
+    "terrain-high.glb": true,
+    "terrain-low.glb": true,
+    "terrain.json": true,
+    "heights.bin": true
+  }
+}

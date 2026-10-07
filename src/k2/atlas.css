@@ -22,4 +22,6 @@
 @media(min-width:851px) and (max-height:830px){.explore-panel{top:324px;bottom:92px;overflow-y:auto;padding-right:12px}}
 .k2-app::after{content:"";position:absolute;left:0;right:0;bottom:0;height:115px;z-index:1;pointer-events:none;background:linear-gradient(transparent,#07121dd6)}
 .header-actions button,.light-button,.view-selector button{min-width:44px;min-height:44px}
+.atmosphere-controls{display:grid;grid-template-columns:1.9fr 1fr;gap:14px}.atmosphere-controls .layer-toggle{font-size:11px}.atmosphere-controls .layer-toggle small{font-size:8px}
+.compass-rose{background:#10263894;border-color:#d5e8f25a}.compass-rose>span{text-shadow:0 1px 3px #07141a}.compass>small{color:#edf4f8;background:#102638a3;padding:6px 3px;border-radius:3px;margin-top:21px}
 @media(max-width:850px){.explore-panel,.point-card{max-height:min(48svh,calc(100svh - 456px))}}

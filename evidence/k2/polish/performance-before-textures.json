@@ -1,0 +1,290 @@
+{
+  "date": "2026-10-07T01:05:42.910Z",
+  "base": "http://127.0.0.1:4173",
+  "environment": {
+    "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/151.0.0.0 Safari/537.36",
+    "cores": 3,
+    "deviceMemory": 8,
+    "gpu": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "viewport": [
+      1440,
+      900
+    ],
+    "devicePixelRatio": 1,
+    "physicalPhone": false
+  },
+  "initialNetwork": [
+    {
+      "name": "http://127.0.0.1:4173/assets/main-BSjhFgd5.js",
+      "transferSize": 69245,
+      "encodedBodySize": 68945
+    },
+    {
+      "name": "http://127.0.0.1:4173/assets/main-Ci3pmOKP.css",
+      "transferSize": 1335,
+      "encodedBodySize": 1035
+    },
+    {
+      "name": "http://127.0.0.1:4173/assets/K2App-CaySJWsU.js",
+      "transferSize": 49720,
+      "encodedBodySize": 49420
+    },
+    {
+      "name": "http://127.0.0.1:4173/assets/LineSegments2-DkJFPSRM.js",
+      "transferSize": 152985,
+      "encodedBodySize": 152685
+    },
+    {
+      "name": "http://127.0.0.1:4173/assets/K2App-DSVxj6n2.css",
+      "transferSize": 5089,
+      "encodedBodySize": 4789
+    },
+    {
+      "name": "http://127.0.0.1:4173/k2-mark.svg",
+      "transferSize": 549,
+      "encodedBodySize": 249
+    },
+    {
+      "name": "http://127.0.0.1:4173/k2/terrain.json",
+      "transferSize": 1016,
+      "encodedBodySize": 716
+    },
+    {
+      "name": "http://127.0.0.1:4173/k2/heights.bin",
+      "transferSize": 526638,
+      "encodedBodySize": 526338
+    },
+    {
+      "name": "http://127.0.0.1:4173/assets/inter-latin-400-normal-C38fXH4l.woff2",
+      "transferSize": 23964,
+      "encodedBodySize": 23664
+    },
+    {
+      "name": "http://127.0.0.1:4173/assets/inter-latin-500-normal-Cerq10X2.woff2",
+      "transferSize": 24572,
+      "encodedBodySize": 24272
+    },
+    {
+      "name": "http://127.0.0.1:4173/assets/inter-latin-ext-400-normal-C1nco2VV.woff2",
+      "transferSize": 35300,
+      "encodedBodySize": 35000
+    },
+    {
+      "name": "http://127.0.0.1:4173/k2/terrain-low.glb",
+      "transferSize": 860400,
+      "encodedBodySize": 860100
+    },
+    {
+      "name": "http://127.0.0.1:4173/k2/rock-detail.png",
+      "transferSize": 57695,
+      "encodedBodySize": 57395
+    }
+  ],
+  "initialTransferBytes": 1808508,
+  "results": [
+    {
+      "scenario": "general-orbit",
+      "durationMs": 30140.700000000186,
+      "samples": 163,
+      "medianFrameMs": 183.3000000000011,
+      "p95FrameMs": 333.39999999999964,
+      "minFrameMs": 16.599999999998545,
+      "maxFrameMs": 433.39999999999964,
+      "medianEquivalentFPS": 5.455537370430955,
+      "info": {
+        "profile": "low",
+        "geometryProfile": "low",
+        "loadedLevels": [
+          "low"
+        ],
+        "terrainBuilds": 1,
+        "dpr": 0.6514466333088097,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          938,
+          586
+        ],
+        "frames": 167,
+        "drawCalls": 5,
+        "triangles": 39428,
+        "geometries": 5,
+        "textures": 1,
+        "programs": 4,
+        "camera": {
+          "position": [
+            547.7654290703151,
+            4750.000000000006,
+            11172.804737352039
+          ],
+          "target": [
+            220,
+            2000,
+            600
+          ],
+          "distance": 10929.507316922725,
+          "clearance": null
+        },
+        "renderCpuMs": {
+          "median": 0.39999999990686774,
+          "p95": 1.7000000001862645,
+          "samples": 162
+        },
+        "frameIntervalMs": {
+          "median": 183.3000000000029,
+          "p95": 366.60000000000036,
+          "samples": 161
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 0.34,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": false,
+          "labels": true,
+          "camps": true,
+          "death": false
+        },
+        "transition": false
+      }
+    },
+    {
+      "scenario": "bottleneck",
+      "durationMs": 30064.799999999814,
+      "samples": 223,
+      "medianFrameMs": 116.70000000000437,
+      "p95FrameMs": 250,
+      "minFrameMs": 16.599999999998545,
+      "maxFrameMs": 350,
+      "medianEquivalentFPS": 8.56898029134501,
+      "info": {
+        "profile": "low",
+        "geometryProfile": "low",
+        "loadedLevels": [
+          "low"
+        ],
+        "terrainBuilds": 1,
+        "dpr": 0.6514466333088097,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          938,
+          586
+        ],
+        "frames": 391,
+        "drawCalls": 5,
+        "triangles": 39428,
+        "geometries": 5,
+        "textures": 1,
+        "programs": 4,
+        "camera": {
+          "position": [
+            691.3953139843779,
+            4350,
+            1903.2820377497826
+          ],
+          "target": [
+            59.999999999999986,
+            3769.9999999999995,
+            234.99999999999997
+          ],
+          "distance": 1875.6932051910833,
+          "clearance": 2503.6971949625813
+        },
+        "renderCpuMs": {
+          "median": 0.20000000018626451,
+          "p95": 0.6000000000931323,
+          "samples": 222
+        },
+        "frameIntervalMs": {
+          "median": 116.79999999999563,
+          "p95": 250,
+          "samples": 221
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 0.34,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": false,
+          "labels": true,
+          "camps": true,
+          "death": false
+        },
+        "transition": false
+      }
+    },
+    {
+      "scenario": "all-layers",
+      "durationMs": 30069.600000000093,
+      "samples": 154,
+      "medianFrameMs": 183.5,
+      "p95FrameMs": 383.20000000001164,
+      "minFrameMs": 16.59999999999127,
+      "maxFrameMs": 533.4000000000087,
+      "medianEquivalentFPS": 5.449591280653951,
+      "info": {
+        "profile": "low",
+        "geometryProfile": "low",
+        "loadedLevels": [
+          "low"
+        ],
+        "terrainBuilds": 1,
+        "dpr": 0.6514466333088097,
+        "width": 1440,
+        "height": 900,
+        "resolution": [
+          938,
+          586
+        ],
+        "frames": 548,
+        "drawCalls": 6,
+        "triangles": 43586,
+        "geometries": 6,
+        "textures": 1,
+        "programs": 5,
+        "camera": {
+          "position": [
+            413.55259502538905,
+            4750.000000000007,
+            11176.113065943762
+          ],
+          "target": [
+            220,
+            2000,
+            600
+          ],
+          "distance": 10929.507316922729,
+          "clearance": null
+        },
+        "renderCpuMs": {
+          "median": 0.2999999998137355,
+          "p95": 0.8000000002793968,
+          "samples": 153
+        },
+        "frameIntervalMs": {
+          "median": 199.89999999999418,
+          "p95": 383.20000000001164,
+          "samples": 152
+        },
+        "measurementNote": "Intervalos RAF durante movimiento. renderCpuMs es envío CPU, no tiempo GPU. Conteos no equivalen a memoria GPU.",
+        "estimatedTextureMiB": 0.34,
+        "selected": null,
+        "layers": {
+          "routes": true,
+          "abruzzi": true,
+          "cesen": true,
+          "labels": true,
+          "camps": true,
+          "death": true
+        },
+        "transition": false
+      }
+    }
+  ],
+  "idleFramesDuringOneSecond": 0,
+  "errors": [],
+  "limits": "Headless Chromium on a 3-core Linux cloud container, ANGLE SwiftShader CPU rendering. These are not phone measurements or hardware GPU guarantees."
+}

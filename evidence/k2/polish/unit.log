@@ -1,0 +1,13 @@
+$ vitest run
+
+ RUN  v5.0.3 /workspace/inventos-codex
+
+
+ Test Files  12 passed (12)
+      Tests  219 passed (219)
+   Start at  11:56:16
+   Duration  8.32s (import 52%, tests 40%, transform 7%, worker 1%)
+
+    Isolate  12 workers spawned · ~162ms startup each (spawn + environment, per file)
+             at least ~1.78s faster with isolate: false — reuses workers across files instead of one per file
+

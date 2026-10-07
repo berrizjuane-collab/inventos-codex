@@ -10,6 +10,8 @@ test('initial load, routes, layers and HTML point details preserve terrain and s
   const assets:string[]=[];page.on('request',r=>{if(r.url().includes('/k2/')&&r.url().endsWith('.glb'))assets.push(r.url());});
   await ready(page);await expect(page.getByRole('heading',{name:'K2 Atlas interactivo'})).toBeVisible();
   await page.locator('#quality').selectOption('low');const before=await info(page);
+  expect(before.layers.cesen).toBe(true);
+  await page.getByRole('button',{name:'Česen / Basque',exact:false}).click();
   await page.getByRole('button',{name:'Česen / Basque',exact:false}).click();
   await page.getByRole('switch',{name:'Zona de la muerte'}).click();await page.getByRole('switch',{name:'Etiquetas',exact:true}).click();
   await page.getByRole('switch',{name:'Mostrar rutas'}).click();
@@ -27,6 +29,7 @@ test('desktop and mobile layout, modal keyboard, touch-sized controls and screen
     const a=document.querySelector('.mountain-identity')!.getBoundingClientRect(),b=document.querySelector('.explore-panel')!.getBoundingClientRect();
     return a.bottom>b.top;
   });expect(overlap).toBe(false);
+  await page.getByRole('button',{name:'Česen / Basque',exact:false}).click();
   await page.getByRole('button',{name:'Česen / Basque',exact:false}).click();
   await page.getByRole('switch',{name:'Zona de la muerte'}).click();await page.screenshot({path:'evidence/k2/routes.png'});
   await page.getByRole('button',{name:'Fuentes',exact:true}).click();
@@ -59,6 +62,7 @@ test('presets, opposite faces, zoom and surface clearance; reduced motion',async
   expect((await info(page)).camera.position).not.toEqual(close.camera.position);
 });
 test('20 interaction cycles and quality changes retain stable resource counts',async({page})=>{
+  test.setTimeout(120000); // Twenty real UI cycles also run on CPU-only SwiftShader.
   await page.emulateMedia({reducedMotion:'reduce'});await ready(page);await page.locator('#quality').selectOption('medium');
   await page.waitForFunction(()=>(window as any).__K2.info().loadedLevels.includes('medium'));
   await page.evaluate(()=>(window as any).__K2.view('bottleneck'));
@@ -101,6 +105,24 @@ test('existing vector laboratory remains available',async({page})=>{
   await page.goto('/laboratorio/');await expect(page).toHaveTitle('Campo · Laboratorio vectorial');
   await expect(page.getByText('Laboratorio de campos vectoriales',{exact:false}).first()).toBeVisible();
   await expect(page.locator('canvas').first()).toBeVisible();
+});
+test('texture failure can retry and cloud toggle changes the rendered scene without new terrain loads',async({page})=>{
+  const textureRequests:string[]=[];
+  page.on('request',r=>{if(/terrain-(albedo|normal)\.jpg|rock-grain\.jpg|cloud-bank\.png/.test(r.url()))textureRequests.push(r.url());});
+  await page.route('**/k2/terrain-normal.jpg',r=>r.abort());
+  await page.goto('/');await expect(page.locator('.scene-error')).toBeVisible();
+  await page.unroute('**/k2/terrain-normal.jpg');
+  await page.getByRole('button',{name:'Reintentar'}).click();
+  await page.waitForFunction(()=>(window as any).__K2?.info().frames>0);
+  const withClouds=await info(page),requestsBefore=textureRequests.length;
+  await page.getByRole('switch',{name:'Nubes',exact:true}).click();
+  await page.waitForFunction(before=>{const state=(window as any).__K2.info();return !state.layers.clouds&&state.frames>before.frames&&state.drawCalls<before.drawCalls;},withClouds);
+  const clear=await info(page);expect(clear.drawCalls).toBeLessThan(withClouds.drawCalls);
+  expect(clear.terrainBuilds).toBe(withClouds.terrainBuilds);
+  await page.getByRole('switch',{name:'Nubes',exact:true}).click();
+  await page.waitForFunction(before=>{const state=(window as any).__K2.info();return state.layers.clouds&&state.frames>before.frames&&state.drawCalls===before.drawCalls;},withClouds);
+  expect((await info(page)).drawCalls).toBe(withClouds.drawCalls);
+  expect(textureRequests).toHaveLength(requestsBefore);
 });
 test('touch orbit and pinch, and manual input interrupts a camera transition',async({page})=>{
   await page.setViewportSize({width:390,height:844});await ready(page);
