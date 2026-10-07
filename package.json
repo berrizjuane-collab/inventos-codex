@@ -15,7 +15,8 @@
     "test:watch": "vitest",
     "test:e2e": "playwright test",
     "check": "tsc -b",
-    "test:performance": "playwright test -c playwright.performance.config.ts"
+    "test:performance": "playwright test -c playwright.performance.config.ts",
+    "test:k2": "playwright test -c playwright.k2.config.ts"
   },
   "dependencies": {
     "@fontsource/inter": "5.3.0",

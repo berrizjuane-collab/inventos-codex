@@ -1,0 +1,12 @@
+{
+  "identical": true,
+  "sha256": {
+    "rock-detail.png": "66694db364e31b47ca2fa4bbddcebcaaf0753df2dd82e8c0cede1a49014b2946",
+    "terrain-medium.glb": "6d50ecdfccb5ae13b19ccca0c70bfc813ad3df3c86f2abe9f03512ca8a75ecdb",
+    "atlas.json": "8000ebfa405e019d74aae6551d81b57a2a5edfcd495bfc6a2740a738682fbddb",
+    "terrain-high.glb": "cd948f32af61b3cdec77e4c90ecd61fac117ed542da1a44e2dbe07a947e1144f",
+    "terrain-low.glb": "2b3a80f89725f87b82dd0ef622a640b0c2d89e30b66e85fb5fd124c498447cda",
+    "terrain.json": "b681683004e5bba8202391a6959c8da1d603939493b522b01d6554c079166487",
+    "heights.bin": "b71f3f0f39014fe6aaa11b79c00cc762c8bb38981eaad1424bc5774061bbd3dc"
+  }
+}

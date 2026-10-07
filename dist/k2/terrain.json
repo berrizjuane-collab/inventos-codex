@@ -1,0 +1,54 @@
+{
+  "classification": "reconstruido",
+  "source": "https://github.com/hoshigarasu/terrain-layering-model/blob/f7b32fe0f19221e3364440c016ca825d92d420cc/samples/K2.pdf",
+  "sourceSHA256": "ef15f1de17a43f5f7afef4b5eca9d6957897bd9304ae3f4d1173adbcf98b0b95",
+  "grid": 513,
+  "gridSpacingMeters": 22.65625,
+  "measurementResolutionMeters": null,
+  "contourIntervalMeters": 150,
+  "bounds": [
+    -5800.0,
+    -5200.0,
+    5800.0,
+    6400.0
+  ],
+  "verticalOrigin": 4500.0,
+  "summit": [
+    0.0,
+    4111.0,
+    10.9375
+  ],
+  "summitReference": {
+    "latitude": 35.8825,
+    "longitude": 76.5133,
+    "altitude": 8611
+  },
+  "axes": {
+    "x": "este",
+    "y": "arriba, altitud del modelo - 4500 m",
+    "z": "sur"
+  },
+  "verticalDatum": "Referencia de modelo aproximada; geoide del DEM original no verificado.",
+  "georeferencing": "Norte del raster, escala impresa 1:58100 y anclaje aproximado a la cumbre; no control terrestre.",
+  "nestingPixelsRepaired": 1,
+  "localSummitCorrectionMeters": 30.72,
+  "minHeight": 4943.0,
+  "maxHeight": 8611.0,
+  "levels": {
+    "terrain-low": {
+      "triangles": 32768,
+      "vertices": 16641,
+      "bytes": 860100
+    },
+    "terrain-medium": {
+      "triangles": 131072,
+      "vertices": 66049,
+      "bytes": 3158816
+    },
+    "terrain-high": {
+      "triangles": 524288,
+      "vertices": 263169,
+      "bytes": 12608296
+    }
+  }
+}

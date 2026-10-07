@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-07T01:03:43.804Z",
+  "base": "http://127.0.0.1:4173",
+  "layouts": [
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "identityBottom": 310.46875,
+      "panelTop": 334,
+      "panelBottom": 803
+    },
+    {
+      "width": 1280,
+      "height": 720,
+      "overflow": false,
+      "identityBottom": 251.109375,
+      "panelTop": 324,
+      "panelBottom": 628
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "identityBottom": 261.359375,
+      "panelTop": 274,
+      "panelBottom": 662
+    }
+  ],
+  "selectionSurvivesQuality": true,
+  "legacyProduction": true,
+  "errors": []
+}

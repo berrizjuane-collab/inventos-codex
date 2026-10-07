@@ -7,7 +7,7 @@ async function ready(page:Page){await expect.poll(()=>page.evaluate(()=>{const d
 async function load(page:Page,config:ExperimentConfigV1){await page.getByRole('button',{name:'Archivos y exportación'}).click();await page.getByLabel('Archivo de configuración').setInputFiles({name:'precision.json',mimeType:'application/json',buffer:Buffer.from(JSON.stringify(config))});await expect(page.locator('.files-dialog')).not.toBeVisible();await expect.poll(()=>page.evaluate(()=>(window as any).__campoDiagnostics().config.domain)).toEqual(config.domain);await ready(page);await page.getByRole('button',{name:'Restablecer cámara'}).click();await ready(page)}
 
 test('Precisión gráfica: caja de 0,001 cerca de 10 000, selección mundial y exportación',async({page})=>{
- await page.goto('/');await ready(page);
+ await page.goto('/laboratorio/');await ready(page);
  // Keep the canvas size equal: domain strings legitimately wrap differently in the legend.
  const fixedLayout=await page.addStyleTag({content:'.legend{display:none!important}'});
  const c=defaultConfig();c.fieldId='uniform';c.components=['1','0','0'];c.resolution=21;c.layers.axes=false;c.layers.seeds=false;c.seeds=[];c.scales.directionOnly=true;c.inspected=[0,0,0];

@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
+import 'katex/dist/katex.min.css';
 import { defaultConfig, generateSeeds } from './experiment/defaults';
 import type { Components, ExperimentConfigV1, FieldId, Parameters, Vec3 } from './experiment/types';
 import { getField } from './math/catalog';

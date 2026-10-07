@@ -204,7 +204,7 @@ for (const size of sizes) {
           });
           await testInfo.attach('zoom-scope', { body: 'Emulación CDP: área CSS al 50 %, DPR 2. Zoom nativo del navegador pendiente de comprobación humana.', contentType: 'text/plain' });
         }
-        await page.goto('/'); await ready(page); await configure(page, scenario.id);
+        await page.goto('/laboratorio/'); await ready(page); await configure(page, scenario.id);
         if (scenario.id === 'menu-help-focus') await menuAndFocus(page);
         if (scenario.id === 'reduced-motion-zoom200') {
           await openControls(page);

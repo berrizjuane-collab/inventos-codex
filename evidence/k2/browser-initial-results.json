@@ -1,0 +1,399 @@
+{
+  "config": {
+    "argv": [
+      "/opt/codex/runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "/workspace/inventos-codex/node_modules/@playwright/test/cli.js",
+      "test",
+      "-c",
+      "playwright.k2.config.ts"
+    ],
+    "configFile": "/workspace/inventos-codex/playwright.k2.config.ts",
+    "rootDir": "/workspace/inventos-codex/tests/k2",
+    "failOnFlakyTests": false,
+    "forbidOnly": false,
+    "fullyParallel": false,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 1
+    },
+    "preserveOutput": "always",
+    "projects": [
+      {
+        "outputDir": "/workspace/inventos-codex/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 1
+        },
+        "id": "",
+        "name": "",
+        "testDir": "/workspace/inventos-codex/tests/k2",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "quiet": false,
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "evidence/k2/browser-results.json"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "shard": null,
+    "tags": [],
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.63.0",
+    "workers": 1,
+    "webServer": {
+      "command": "pnpm dev --port 5173",
+      "url": "http://127.0.0.1:5173",
+      "reuseExistingServer": true
+    }
+  },
+  "suites": [
+    {
+      "title": "atlas.spec.ts",
+      "file": "atlas.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "initial load, routes, layers and HTML point details preserve terrain and selection",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 22378,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.point-card')\nExpected substring: \u001b[32m\"8.200\"\u001b[39m\nReceived string:    \u001b[31m\"PUNTO DE INTERÉSBottleneck~8200 mPosición reconstruidaCorredor estrecho y empinado junto a la barrera de seracs. Es distinto de la pared de hielo y de la travesía que sigue hacia el oeste. El detalle local no está resuelto por las curvas de 150 m.Enfocar este punto Referencias: 12\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.point-card') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.point-card')\u001b[22m\n\u001b[2m    23 × locator resolved to <aside class=\"point-card\" aria-labelledby=\"point-title\">…</aside>\u001b[22m\n\u001b[2m       - unexpected value \"PUNTO DE INTERÉSBottleneck~8200 mPosición reconstruidaCorredor estrecho y empinado junto a la barrera de seracs. Es distinto de la pared de hielo y de la travesía que sigue hacia el oeste. El detalle local no está resuelto por las curvas de 150 m.Enfocar este punto Referencias: 12\"\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.point-card')\nExpected substring: \u001b[32m\"8.200\"\u001b[39m\nReceived string:    \u001b[31m\"PUNTO DE INTERÉSBottleneck~8200 mPosición reconstruidaCorredor estrecho y empinado junto a la barrera de seracs. Es distinto de la pared de hielo y de la travesía que sigue hacia el oeste. El detalle local no está resuelto por las curvas de 150 m.Enfocar este punto Referencias: 12\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.point-card') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.point-card')\u001b[22m\n\u001b[2m    23 × locator resolved to <aside class=\"point-card\" aria-labelledby=\"point-title\">…</aside>\u001b[22m\n\u001b[2m       - unexpected value \"PUNTO DE INTERÉSBottleneck~8200 mPosición reconstruidaCorredor estrecho y empinado junto a la barrera de seracs. Es distinto de la pared de hielo y de la travesía que sigue hacia el oeste. El detalle local no está resuelto por las curvas de 150 m.Enfocar este punto Referencias: 12\"\u001b[22m\n\n    at /workspace/inventos-codex/tests/k2/atlas.spec.ts:19:45",
+                    "location": {
+                      "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                      "column": 45,
+                      "line": 19
+                    },
+                    "snippet": "  17 |   await page.getByRole('button',{name:'Puntos de interés',exact:true}).click();\n  18 |   await page.getByRole('button',{name:/Bottleneck reconstruido/}).click();\n> 19 |   await expect(page.locator('.point-card')).toContainText('8.200');\n     |                                             ^\n  20 |   await expect(page.locator('.point-card')).toContainText('Posición reconstruida');\n  21 |   const after=await info(page);expect(after.terrainBuilds).toBe(before.terrainBuilds);expect(assets).toHaveLength(1);\n  22 |   expect(after.selected).toBe('bottleneck');expect(errors).toEqual([]);"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                        "column": 45,
+                        "line": 19
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoContainText\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m failed\n\nLocator: locator('.point-card')\nExpected substring: \u001b[32m\"8.200\"\u001b[39m\nReceived string:    \u001b[31m\"PUNTO DE INTERÉSBottleneck~8200 mPosición reconstruidaCorredor estrecho y empinado junto a la barrera de seracs. Es distinto de la pared de hielo y de la travesía que sigue hacia el oeste. El detalle local no está resuelto por las curvas de 150 m.Enfocar este punto Referencias: 12\"\u001b[39m\nTimeout: 10000ms\n\nCall log:\n\u001b[2m  - Expect \"toContainText\" locator('.point-card') with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for locator('.point-card')\u001b[22m\n\u001b[2m    23 × locator resolved to <aside class=\"point-card\" aria-labelledby=\"point-title\">…</aside>\u001b[22m\n\u001b[2m       - unexpected value \"PUNTO DE INTERÉSBottleneck~8200 mPosición reconstruidaCorredor estrecho y empinado junto a la barrera de seracs. Es distinto de la pared de hielo y de la travesía que sigue hacia el oeste. El detalle local no está resuelto por las curvas de 150 m.Enfocar este punto Referencias: 12\"\u001b[22m\n\n\n  17 |   await page.getByRole('button',{name:'Puntos de interés',exact:true}).click();\n  18 |   await page.getByRole('button',{name:/Bottleneck reconstruido/}).click();\n> 19 |   await expect(page.locator('.point-card')).toContainText('8.200');\n     |                                             ^\n  20 |   await expect(page.locator('.point-card')).toContainText('Posición reconstruida');\n  21 |   const after=await info(page);expect(after.terrainBuilds).toBe(before.terrainBuilds);expect(assets).toHaveLength(1);\n  22 |   expect(after.selected).toBe('bottleneck');expect(errors).toEqual([]);\n    at /workspace/inventos-codex/tests/k2/atlas.spec.ts:19:45"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T00:45:53.270Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/inventos-codex/test-results/atlas-initial-load-routes--2e52a-serve-terrain-and-selection/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/inventos-codex/test-results/atlas-initial-load-routes--2e52a-serve-terrain-and-selection/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                    "column": 45,
+                    "line": 19
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-31ba6b7c61fd161277f0",
+          "file": "atlas.spec.ts",
+          "line": 8,
+          "column": 1
+        },
+        {
+          "title": "desktop and mobile layout, modal keyboard, touch-sized controls and screenshots",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 22489,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T00:46:17.069Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-7b477ea2815a0bc264df",
+          "file": "atlas.spec.ts",
+          "line": 24,
+          "column": 1
+        },
+        {
+          "title": "presets, opposite faces, zoom and surface clearance; reduced motion",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 31534,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T00:46:40.165Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-28e7c351b0a3f0cbc36f",
+          "file": "atlas.spec.ts",
+          "line": 45,
+          "column": 1
+        },
+        {
+          "title": "20 interaction cycles and quality changes retain stable resource counts",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 43366,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T00:47:11.725Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-a725cbccd31f4118647b",
+          "file": "atlas.spec.ts",
+          "line": 61,
+          "column": 1
+        },
+        {
+          "title": "WebGL fallback, actual asset error, retry and context restoration",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 10603,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T00:47:55.150Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-c886d8dec68ee07f1310",
+          "file": "atlas.spec.ts",
+          "line": 79,
+          "column": 1
+        },
+        {
+          "title": "accessible HTML controls and dialogs",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 11389,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T00:48:05.825Z",
+                  "annotations": [],
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-311b8e4ea39fd5f01381",
+          "file": "atlas.spec.ts",
+          "line": 92,
+          "column": 1
+        },
+        {
+          "title": "existing vector laboratory remains available",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "",
+              "projectName": "",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 11675,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Laboratorio vectorial').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('Laboratorio vectorial').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Laboratorio vectorial').first()\u001b[22m\n",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Laboratorio vectorial').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('Laboratorio vectorial').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Laboratorio vectorial').first()\u001b[22m\n\n    at /workspace/inventos-codex/tests/k2/atlas.spec.ts:102:79",
+                    "location": {
+                      "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                      "column": 79,
+                      "line": 102
+                    },
+                    "snippet": "  100 | test('existing vector laboratory remains available',async({page})=>{\n  101 |   await page.goto('/laboratorio/');await expect(page).toHaveTitle('Campo · Laboratorio vectorial');\n> 102 |   await expect(page.getByText('Laboratorio vectorial',{exact:false}).first()).toBeVisible();\n      |                                                                               ^\n  103 |   await expect(page.locator('canvas').first()).toBeVisible();\n  104 | });\n  105 |"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                        "column": 79,
+                        "line": 102
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mlocator\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m(\u001b[22m\u001b[2m)\u001b[22m failed\n\nLocator: getByText('Laboratorio vectorial').first()\nExpected: visible\nTimeout: 10000ms\nError: element(s) not found\n\nCall log:\n\u001b[2m  - Expect \"toBeVisible\" getByText('Laboratorio vectorial').first() with timeout 10000ms\u001b[22m\n\u001b[2m  - waiting for getByText('Laboratorio vectorial').first()\u001b[22m\n\n\n  100 | test('existing vector laboratory remains available',async({page})=>{\n  101 |   await page.goto('/laboratorio/');await expect(page).toHaveTitle('Campo · Laboratorio vectorial');\n> 102 |   await expect(page.getByText('Laboratorio vectorial',{exact:false}).first()).toBeVisible();\n      |                                                                               ^\n  103 |   await expect(page.locator('canvas').first()).toBeVisible();\n  104 | });\n  105 |\n    at /workspace/inventos-codex/tests/k2/atlas.spec.ts:102:79"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-10-07T00:48:17.245Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "error-context",
+                      "contentType": "text/markdown",
+                      "path": "/workspace/inventos-codex/test-results/atlas-existing-vector-laboratory-remains-available/error-context.md"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "/workspace/inventos-codex/test-results/atlas-existing-vector-laboratory-remains-available/trace.zip"
+                    }
+                  ],
+                  "errorLocation": {
+                    "file": "/workspace/inventos-codex/tests/k2/atlas.spec.ts",
+                    "column": 79,
+                    "line": 102
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "bed8efe74e8526a653f7-fd99b785760a3f3845ec",
+          "file": "atlas.spec.ts",
+          "line": 100,
+          "column": 1
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2026-10-07T00:45:52.569Z",
+    "duration": 156578.276,
+    "expected": 5,
+    "skipped": 0,
+    "unexpected": 2,
+    "flaky": 0
+  }
+}

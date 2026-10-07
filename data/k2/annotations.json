@@ -1,0 +1,422 @@
+{
+  "sources": [
+    {
+      "id": "contours",
+      "title": "Curvas métricas del K2 · hoshigarasu",
+      "url": "https://github.com/hoshigarasu/terrain-layering-model/blob/f7b32fe0f19221e3364440c016ca825d92d420cc/samples/K2.pdf",
+      "note": "26 curvas, 4 650–8 400 m, intervalo 150 m. Escala impresa 1:58 100. README declara MIT. El raster de origen, su resolución y geoide no están incluidos; este atlas reconstruye las curvas y no presenta un DEM medido."
+    },
+    {
+      "id": "madison",
+      "title": "Garrett Madison · expedición de 2023",
+      "url": "https://madisonmountaineering.com/summit-rotation-underway/",
+      "note": "Cotas declaradas de la expedición: BC 4 968, C1 6 065, C2 6 700, C3 7 250, C4 7 681 m. No define coordenadas universales de campamento."
+    },
+    {
+      "id": "abc",
+      "title": "Madison · primer ciclo de aclimatación",
+      "url": "https://madisonmountaineering.com/first-rotation-is-underway/",
+      "note": "Campo base avanzado a 5 303 m en esa expedición."
+    },
+    {
+      "id": "gatta",
+      "title": "Philippe Gatta · espolón de los Abruzzos",
+      "url": "https://www.philippegatta.com/k2-pakistan/",
+      "note": "Relaciones entre campamentos, Hombro, corredor Bottleneck y travesía hacia la izquierda bajo el serac. Fotografías consultadas como referencia; no redistribuidas."
+    },
+    {
+      "id": "aaj-cesen",
+      "title": "American Alpine Journal · Česen, 1996",
+      "url": "https://publications.americanalpineclub.org/articles/12199732500",
+      "note": "Waldo Farias: C1 6 300 m, C2 7 000 m, C3 en el Hombro ~7 600 m. Las posiciones se reconstruyen; no se reciclan los campamentos de Abruzzi."
+    },
+    {
+      "id": "aaj-ice",
+      "title": "American Alpine Journal · Bottleneck y seracs",
+      "url": "https://publications.americanalpineclub.org/articles/12200535103/",
+      "note": "Describe el corredor oblicuo bajo la barrera de seracs y su variación entre expediciones. No representa el estado actual del hielo."
+    },
+    {
+      "id": "osm",
+      "title": "OpenStreetMap · campo base del K2",
+      "url": "https://mapcarta.com/N4844636351",
+      "note": "Cartografía colaborativa, nodo OSM 4844636351, consultado vía Mapcarta: ~35.8346 N, 76.5093 E. © colaboradores de OpenStreetMap, ODbL. Referencia aproximada, no GPS de una expedición."
+    },
+    {
+      "id": "south",
+      "title": "Referencia visual · sur / Godwin-Austen",
+      "url": "https://commons.wikimedia.org/wiki/File:Approaching_K2_Base_Camp.jpg",
+      "note": "Zacharie Grossen, 2015, CC BY-SA 4.0. Vista hacia el norte desde el glaciar. Consultada, no incorporada como textura."
+    },
+    {
+      "id": "north",
+      "title": "Referencia visual · cara norte",
+      "url": "https://commons.wikimedia.org/wiki/File:K2_Nordseite.jpg",
+      "note": "Kuno Lechner, 1986, CC BY-SA 3.0. Referencia de silueta desde China; sin textura fotográfica."
+    },
+    {
+      "id": "east",
+      "title": "Referencia visual · cara este",
+      "url": "https://commons.wikimedia.org/wiki/File:K2_East_Face_1909.jpg",
+      "note": "Luigi Amedeo, 1909, dominio público. Vista histórica desde Skyang Kangri, utilizada para contraste lateral."
+    },
+    {
+      "id": "routes-photo",
+      "title": "Croquis · rutas de la cara sur",
+      "url": "https://commons.wikimedia.org/wiki/File:K2_south_routes.jpg",
+      "note": "Kogo / Iain99, 2004 / 2008, CC BY-SA 3.0. Solo se contrastan E (Česen) y F (Abruzzi); la ficha advierte un error en otra vía."
+    }
+  ],
+  "points": [
+    {
+      "id": "base",
+      "name": "Campo base",
+      "shortName": "Campo base",
+      "category": "camp",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        -364,
+        5320
+      ],
+      "referenceAltitude": 4968,
+      "certainty": "aproximado",
+      "snap": false,
+      "description": "En el glaciar Godwin-Austen, al sur del K2. La referencia cartográfica es aproximada; 4 968 m es la cota declarada por la expedición Madison de 2023.",
+      "references": [
+        "osm",
+        "madison",
+        "south"
+      ],
+      "view": "general"
+    },
+    {
+      "id": "abc",
+      "name": "Campo base avanzado",
+      "shortName": "Base avanzada",
+      "category": "camp",
+      "routes": [
+        "abruzzi"
+      ],
+      "seed": [
+        2750,
+        2950
+      ],
+      "referenceAltitude": 5303,
+      "certainty": "reconstruido",
+      "description": "Acceso al pie del espolón sureste. Cota de la expedición de 2023; posición reconstruida en el terreno, sin un registro GPS de esa expedición.",
+      "references": [
+        "abc",
+        "gatta"
+      ],
+      "view": "abruzzi"
+    },
+    {
+      "id": "camp1",
+      "name": "Camp I · Abruzzi",
+      "shortName": "Camp I",
+      "category": "camp",
+      "routes": [
+        "abruzzi"
+      ],
+      "seed": [
+        2050,
+        1830
+      ],
+      "referenceAltitude": 6065,
+      "certainty": "reconstruido",
+      "description": "Primer campamento en el espolón de los Abruzzos. La cota de referencia es de 2023; su posición sobre la arista es orientativa y cambia entre expediciones.",
+      "references": [
+        "madison",
+        "gatta",
+        "routes-photo"
+      ],
+      "view": "abruzzi"
+    },
+    {
+      "id": "camp2",
+      "name": "Camp II · Abruzzi",
+      "shortName": "Camp II",
+      "category": "camp",
+      "routes": [
+        "abruzzi"
+      ],
+      "seed": [
+        1420,
+        1280
+      ],
+      "referenceAltitude": 6700,
+      "certainty": "reconstruido",
+      "description": "En el sector rocoso del espolón sureste. House’s Chimney se describe por debajo, pero no se marca aquí porque estas curvas no permiten localizar la chimenea con suficiente respaldo.",
+      "references": [
+        "madison",
+        "gatta"
+      ],
+      "view": "abruzzi"
+    },
+    {
+      "id": "camp3",
+      "name": "Camp III · Abruzzi",
+      "shortName": "Camp III",
+      "category": "camp",
+      "routes": [
+        "abruzzi"
+      ],
+      "seed": [
+        920,
+        940
+      ],
+      "referenceAltitude": 7250,
+      "certainty": "reconstruido",
+      "description": "Por encima del sector de la Black Pyramid, en una variante de 2023. La pirámide rocosa se reconoce como sector, pero no se inventa un punto preciso a partir de los campamentos.",
+      "references": [
+        "madison",
+        "gatta"
+      ],
+      "view": "shoulder"
+    },
+    {
+      "id": "camp4",
+      "name": "Camp IV · Abruzzi",
+      "shortName": "Camp IV",
+      "category": "camp",
+      "routes": [
+        "abruzzi"
+      ],
+      "seed": [
+        750,
+        420
+      ],
+      "referenceAltitude": 7681,
+      "certainty": "reconstruido",
+      "description": "Variante baja en el sector del Hombro, coherente con la expedición de 2023. Otros relatos sitúan Camp IV más alto; no hay una única localización universal.",
+      "references": [
+        "madison",
+        "gatta"
+      ],
+      "view": "shoulder"
+    },
+    {
+      "id": "cesen1",
+      "name": "Camp I · Česen",
+      "shortName": "Česen I",
+      "category": "camp",
+      "routes": [
+        "cesen"
+      ],
+      "seed": [
+        650,
+        1930
+      ],
+      "referenceAltitude": 6300,
+      "certainty": "reconstruido",
+      "description": "Cota declarada por la expedición chilena de 1996. Posición orientativa sobre el espolón sur-sureste; numeración independiente de Abruzzi.",
+      "references": [
+        "aaj-cesen",
+        "routes-photo"
+      ],
+      "view": "abruzzi"
+    },
+    {
+      "id": "cesen2",
+      "name": "Camp II · Česen",
+      "shortName": "Česen II",
+      "category": "camp",
+      "routes": [
+        "cesen"
+      ],
+      "seed": [
+        620,
+        1190
+      ],
+      "referenceAltitude": 7000,
+      "certainty": "reconstruido",
+      "description": "Campamento de la variante de 1996, reconstruido sobre el espolón SSE. No se presenta como campamento de las expediciones actuales.",
+      "references": [
+        "aaj-cesen"
+      ],
+      "view": "shoulder"
+    },
+    {
+      "id": "cesen3",
+      "name": "Camp III · Česen",
+      "shortName": "Česen III",
+      "category": "camp",
+      "routes": [
+        "cesen"
+      ],
+      "seed": [
+        820,
+        510
+      ],
+      "referenceAltitude": 7600,
+      "certainty": "reconstruido",
+      "description": "En el amplio sector del Hombro según AAJ 1997. Desde este sector Česen se incorpora al sistema superior de Abruzzi. No se ha añadido un Camp IV propio sin fuente coherente.",
+      "references": [
+        "aaj-cesen",
+        "gatta"
+      ],
+      "view": "shoulder"
+    },
+    {
+      "id": "shoulder",
+      "name": "El Hombro / Shoulder",
+      "shortName": "El Hombro",
+      "category": "landform",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        600,
+        320
+      ],
+      "referenceAltitude": 7800,
+      "certainty": "reconstruido",
+      "description": "Sector de nieve menos inclinado entre el espolón y la pirámide superior. No es un punto único: su rango y la posición de los campamentos varían. Aquí convergen los trazados orientativos.",
+      "references": [
+        "gatta",
+        "aaj-cesen",
+        "south"
+      ],
+      "view": "shoulder"
+    },
+    {
+      "id": "bottleneck",
+      "name": "Bottleneck",
+      "shortName": "Bottleneck",
+      "category": "landform",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        85,
+        270
+      ],
+      "referenceAltitude": 8200,
+      "certainty": "reconstruido",
+      "description": "Corredor estrecho y empinado junto a la barrera de seracs. Es distinto de la pared de hielo y de la travesía que sigue hacia el oeste. El detalle local no está resuelto por las curvas de 150 m.",
+      "references": [
+        "gatta",
+        "aaj-ice"
+      ],
+      "view": "bottleneck"
+    },
+    {
+      "id": "serac",
+      "name": "Serac superior",
+      "shortName": "Serac",
+      "category": "landform",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        110,
+        175
+      ],
+      "referenceAltitude": 8300,
+      "certainty": "reconstruido",
+      "description": "Barrera de hielo sobre el corredor y la travesía. La malla 3D independiente ilustra su relación espacial; su forma, tamaño y posición fina son reconstruidos y no describen el hielo actual.",
+      "references": [
+        "aaj-ice",
+        "gatta"
+      ],
+      "view": "bottleneck"
+    },
+    {
+      "id": "traverse",
+      "name": "Travesía bajo el serac",
+      "shortName": "Travesía",
+      "category": "landform",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        -70,
+        235
+      ],
+      "referenceAltitude": 8300,
+      "certainty": "reconstruido",
+      "description": "Salida hacia la izquierda al mirar montaña arriba, hacia el oeste, bajo la pared de hielo. Comparte tramo con ambas rutas antes de la pala final a la cumbre.",
+      "references": [
+        "gatta",
+        "aaj-ice"
+      ],
+      "view": "bottleneck"
+    },
+    {
+      "id": "death",
+      "name": "Zona de la muerte",
+      "shortName": "+8 000 m",
+      "category": "zone",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        190,
+        315
+      ],
+      "referenceAltitude": 8000,
+      "certainty": "aproximado",
+      "description": "Umbral altimétrico convencional por encima de 8 000 m, asociado a una altitud extrema. La máscara sigue el relieve del modelo. No implica que por debajo no haya riesgo.",
+      "references": [
+        "gatta"
+      ],
+      "view": "summit"
+    },
+    {
+      "id": "summit",
+      "name": "Cumbre / Summit",
+      "shortName": "Cumbre",
+      "category": "summit",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        0,
+        10.9375
+      ],
+      "referenceAltitude": 8611,
+      "certainty": "reconstruido",
+      "snap": false,
+      "description": "K2, Karakórum, en la frontera entre Pakistán y China. Altitud convencional 8 611 m. La pequeña región sobre la última curva de 8 400 m se reconstruye localmente; el resto del relieve conserva la escala métrica.",
+      "references": [
+        "contours",
+        "south",
+        "north",
+        "east"
+      ],
+      "view": "summit"
+    },
+    {
+      "id": "glacier",
+      "name": "Glaciar Godwin-Austen",
+      "shortName": "Godwin-Austen",
+      "category": "landform",
+      "routes": [
+        "abruzzi",
+        "cesen"
+      ],
+      "seed": [
+        1100,
+        4000
+      ],
+      "referenceAltitude": 5100,
+      "certainty": "aproximado",
+      "snap": false,
+      "description": "Glaciar al pie de la vertiente sur, utilizado como aproximación al campo base. La variación de nieve, hielo y morrena es una interpretación visual; no es un inventario glaciar actualizado.",
+      "references": [
+        "south",
+        "osm"
+      ],
+      "view": "general"
+    }
+  ]
+}
